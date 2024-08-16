@@ -9,7 +9,7 @@ body {
 .form-container {
     width: 300px;
     margin: 50px auto;
-    padding: 20px;
+    padding: 100px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -32,7 +32,7 @@ input {
 }
 
 button {
-    width: 100%;
+    width: 106%;
     padding: 10px;
     background-color: #333;
     color: #fff;
