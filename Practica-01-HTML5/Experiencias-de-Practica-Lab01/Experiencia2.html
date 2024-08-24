@@ -1,71 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario de Contacto</title>
-    <style>
-        form {
-            margin: 0 auto;
-            width: 400px;
-            padding: 1em;
-            border: 1px solid #CCC;
-            border-radius: 1em;
-        }
-
-        div + div {
-            margin-top: 1em;
-        }
-
-        label {
-            display: inline-block;
-            width: 90px;
-            text-align: right;
-        }
-
-        input, textarea {
-            font: 1em sans-serif;
-            width: 300px;
-            box-sizing: border-box;
-            border: 1px solid #999;
-        }
-
-        input:focus, textarea:focus {
-            border-color: #000;
-        }
-
-        textarea {
-            vertical-align: top;
-            height: 5em;
-            resize: vertical;
-        }
-
-        .button {
-            padding-left: 90px;
-        }
-
-        button {
-            margin-left: 0.5em;
-        }
-    </style>
-</head>
-<body>
-    <form action="/my-handling-form-page" method="post">
-        <div>
-            <label for="name">Nombre:</label>
-            <input type="text" id="name" name="user_name" required>
-        </div>
-        <div>
-            <label for="mail">Correo:</label>
-            <input type="email" id="mail" name="user_email" required>
-        </div>
-        <div>
-            <label for="msg">Mensaje:</label>
-            <textarea id="msg" name="user_message" required></textarea>
-        </div>
-        <div class="button">
-            <button type="submit">Enviar</button>
-        </div>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica 02: Formulario Web</title>
+    </head>
+    <body>
+        <form action="/my-handling-form-page" method="post">
+            <!-- div para el campo de nombre -->
+            <div>
+                <label for="name">Nombre:</label>
+                <!-- Campo de texto para el nombre -->
+                <input type="text" id="name" name="user_name" required>
+            </div>
+            <!-- div para el campo de correo electrónico -->
+            <div>
+                <label for="mail">Correo:</label>
+                <!-- Campo de texto para el correo electrónico -->
+                <input type="email" id="mail" name="user_email" required>
+            </div>
+            <!-- div para el área de mensaje -->
+            <div>
+                <label for="msg">Mensaje:</label>
+                <!-- Área de texto para el mensaje -->
+                <textarea id="msg" name="user_message" required></textarea>
+            </div>
+            <!-- div que contiene el botón de envío -->
+            <div class="button">
+                <!-- Botón para enviar el formulario -->
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </body>
 </html>
