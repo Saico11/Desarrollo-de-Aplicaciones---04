@@ -1,90 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>School Timetable</title>
-    <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-        }
 
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Practica 03: Tablas</title>
+    </head>
+    <body>
+        <h1>School Timetable</h1>
+          <table>
+            <colgroup>
+                <col> <!-- Primera columna -->
+                <col> <!-- Segunda columna -->
+                <col style="background-color:#97DB9A;"> <!-- Tercera columna con color verde -->
+                <col style="width: 42px;"> <!-- Cuarta columna con un ancho fijo -->
+                <col style="background-color:#97DB9A;"> <!-- Quinta columna con color verde -->
+                <col style="background-color:#DCC48E; border:4px solid #C1437A;"> <!-- Sexta columna con color de fondo amarillo y borde -->
+                <col style="width: 42px;"> <!-- Séptima columna con un ancho fijo -->
+                <col style="width: 42px;"> <!-- Octava columna con un ancho fijo -->
+            </colgroup>
 
-        th {
-            background-color: #f2f2f2;
-        }
+            <tr>
+                <!-- Fila de encabezados de la tabla -->
+                <th></th> <!-- Columna vacía para el encabezado de la fila de periodos -->
+                <th>Mon</th> <!-- Encabezado para Lunes -->
+                <th>Tues</th> <!-- Encabezado para Martes -->
+                <th>Wed</th> <!-- Encabezado para Miércoles -->
+                <th>Thurs</th> <!-- Encabezado para Jueves -->
+                <th>Fri</th> <!-- Encabezado para Viernes -->
+                <th>Sat</th> <!-- Encabezado para Sábado -->
+                <th>Sun</th> <!-- Encabezado para Domingo -->
+            </tr>
 
-        .green-day {
-            background-color: #97DB9A; 
-        }
-    </style>
-</head>
-<body>
-    <h1>School Timetable</h1>
-    <table>
-        <colgroup>
-            <col>
-            <col>
-            <col style="background-color:#97DB9A;">
-            <col style="width: 42px;">
-            <col style="background-color:#97DB9A;">
-            <col style="background-color:#DCC48E; border:4px solid #C1437A;">
-            <col style="width: 42px;">
-            <col style="width: 42px;">
-        </colgroup>
-        <tr>
-            <th></th>
-            <th>Mon</th>
-            <th>Tues</th>
-            <th>Wed</th>
-            <th>Thurs</th>
-            <th>Fri</th>
-            <th>Sat</th>
-            <th>Sun</th>
-        </tr>
-        <tr>
-            <td>1st period</td>
-            <td>English</td>
-            <td></td>
-            <td></td>
-            <td>German</td>
-            <td>Dutch</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>2nd period</td>
-            <td>English</td>
-            <td>English</td>
-            <td></td>
-            <td>German</td>
-            <td>Dutch</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>3rd period</td>
-            <td></td>
-            <td>German</td>
-            <td></td>
-            <td>German</td>
-            <td>Dutch</td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>4th period</td>
-            <td></td>
-            <td>English</td>
-            <td></td>
-            <td>English</td>
-            <td>Dutch</td>
-            <td></td>
-            <td></td>
-        </tr>
-    </table>
-    <script>
+            <!-- Filas con los periodos y las asignaturas correspondientes -->
+            <tr>
+                <td>1st period</td> <!-- Primer periodo -->
+                <td>English</td> <!-- Clase de Inglés el Lunes -->
+                <td></td> <!-- Sin clase el Martes -->
+                <td></td> <!-- Sin clase el Miércoles -->
+                <td>German</td> <!-- Clase de Alemán el Jueves -->
+                <td>Dutch</td> <!-- Clase de Holandés el Viernes -->
+                <td></td> <!-- Sin clase el Sábado -->
+                <td></td> <!-- Sin clase el Domingo -->
+            </tr>
+            <tr>
+                <td>2nd period</td> <!-- Segundo periodo -->
+                <td>English</td> <!-- Clase de Inglés el Lunes -->
+                <td>English</td> <!-- Clase de Inglés el Martes -->
+                <td></td> <!-- Sin clase el Miércoles -->
+                <td>German</td> <!-- Clase de Alemán el Jueves -->
+                <td>Dutch</td> <!-- Clase de Holandés el Viernes -->
+                <td></td> <!-- Sin clase el Sábado -->
+                <td></td> <!-- Sin clase el Domingo -->
+            </tr>
+            <tr>
+                <td>3rd period</td> <!-- Tercer periodo -->
+                <td></td> <!-- Sin clase el Lunes -->
+                <td>German</td> <!-- Clase de Alemán el Martes -->
+                <td></td> <!-- Sin clase el Miércoles -->
+                <td>German</td> <!-- Clase de Alemán el Jueves -->
+                <td>Dutch</td> <!-- Clase de Holandés el Viernes -->
+                <td></td> <!-- Sin clase el Sábado -->
+                <td></td> <!-- Sin clase el Domingo -->
+            </tr>
+            <tr>
+                <td>4th period</td> <!-- Cuarto periodo -->
+                <td></td> <!-- Sin clase el Lunes -->
+                <td>English</td> <!-- Clase de Inglés el Martes -->
+                <td></td> <!-- Sin clase el Miércoles -->
+                <td>English</td> <!-- Clase de Inglés el Jueves -->
+                <td>Dutch</td> <!-- Clase de Holandés el Viernes -->
+                <td></td> <!-- Sin clase el Sábado -->
+                <td></td> <!-- Sin clase el Domingo -->
+            </tr>
+        </table>
+    </body>
+</html>
