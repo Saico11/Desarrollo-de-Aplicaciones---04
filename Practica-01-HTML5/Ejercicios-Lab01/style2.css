@@ -1,17 +1,22 @@
+/* Cuerpo */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #309091;
+
+    background-size: cover;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
+/* Formulario */
 .form-container {
     width: 300px;
     margin: 50px auto;
     padding: 100px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(180deg, #d4f9f1db 0%, #ffffffdb 35%, #ffffffdb 67%, #d4e1f9db 100%);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.805);
+    border-radius: 16px;
 }
 
 h1 {
@@ -23,6 +28,7 @@ label {
     margin: 10px 0 5px;
 }
 
+/* Ingreso de datos */
 input {
     width: 100%;
     padding: 8px;
@@ -31,18 +37,20 @@ input {
     border-radius: 4px;
 }
 
+/* Boton registro */
 button {
-    width: 106%;
+    width: 100%;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
-    border: none;
+    background: radial-gradient(farthest-corner at bottom center, rgba(255, 255, 255, 0.7), transparent), linear-gradient(to bottom, rgba(138, 230, 227, 0.72), rgba(148, 203, 207, 0.8));
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(152, 222, 247, 0.8);
     border-radius: 4px;
+    color: rgba(50, 26, 17, 0.8);
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #555;
+    background-color: #95cce0;
 }
 
 .error {
