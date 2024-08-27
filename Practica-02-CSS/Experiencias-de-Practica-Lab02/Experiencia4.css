@@ -1,0 +1,62 @@
+/* Selectores combinados */
+div p { 
+    color: blue; /* Cambia el color del texto a azul para los párrafos dentro de un div */
+    font-size: 18px; /* Establece el tamaño de fuente a 18px para esos párrafos */
+}
+
+ul li a { 
+    text-decoration: none; /* Elimina el subrayado de los enlaces dentro de elementos de lista (li) en una lista desordenada (ul) */
+    color: green; /* Cambia el color del texto de los enlaces a verde */
+}
+
+div > p { 
+    margin-left: 20px; /* Añade un margen izquierdo de 20px a los párrafos que son hijos directos de un div */
+    font-style: italic; /* Aplica estilo de fuente cursiva a esos párrafos */
+}
+
+h1 + p { 
+    border-top: 2px solid black; /* Añade un borde superior de 2px sólido negro al primer párrafo que sigue inmediatamente a un h1 */
+}
+
+h2 ~ p { 
+    color: red; /* Cambia el color del texto a rojo para todos los párrafos que siguen a un h2, no necesariamente inmediatos */
+}
+
+/* Selectores múltiples */
+h1, h2, h3 { 
+    font-family: 'Arial', sans-serif; /* Aplica la fuente Arial (o una fuente sans-serif) a h1, h2, y h3 */
+    text-align: center; /* Centra el texto de los encabezados h1, h2, y h3 */
+}
+
+p, li { 
+    line-height: 1.5; /* Establece una altura de línea de 1.5 para los párrafos y elementos de lista */
+    color: darkslategray; /* Cambia el color del texto a gris pizarra oscuro para los párrafos y elementos de lista */
+}
+
+a, button { 
+    background-color: yellow; /* Establece un fondo amarillo para los enlaces y botones */
+    border: 1px solid black; /* Añade un borde negro de 1px sólido a los enlaces y botones */
+}
+
+/* Selectores de atributos (regex) */
+a[href^="https"] { 
+    color: darkblue; /* Cambia el color del texto a azul oscuro para los enlaces que comienzan con "https" en su atributo href */
+}
+
+input[type="text"] { 
+    border: 2px solid green; /* Añade un borde verde de 2px sólido a los campos de entrada de texto */
+}
+
+/* Herencia y cascada */
+body { 
+    font-family: 'Verdana', sans-serif; /* Aplica la fuente Verdana (o una fuente sans-serif) a todo el texto del cuerpo del documento */
+    color: black; /* Establece el color del texto a negro por defecto para todo el documento */
+}
+
+.container { 
+    font-size: 14px; /* Establece un tamaño de fuente de 14px para todo el contenido dentro del div con la clase "container" */
+}
+
+.container p { 
+    font-size: 16px; /* Sobrescribe el tamaño de fuente de 14px y lo ajusta a 16px para los párrafos dentro del div "container" */
+}
