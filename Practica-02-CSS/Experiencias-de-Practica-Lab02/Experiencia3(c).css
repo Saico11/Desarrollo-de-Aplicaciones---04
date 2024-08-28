@@ -1,0 +1,45 @@
+/* Inserta contenido antes de un párrafo */
+p::before {
+    content: "Nota: "; /* Inserta el texto 'Nota:' antes del párrafo */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: red; /* Cambia el color del texto a rojo */
+}
+
+/* Inserta contenido después de un párrafo */
+p::after {
+    content: " [Fin del texto]"; /* Inserta el texto después del párrafo */
+    color: blue; /* Cambia el color del texto a azul */
+}
+
+/* Selecciona la primera letra de un párrafo */
+p::first-letter {
+    font-size: 2em; /* Aumenta el tamaño de la primera letra */
+    color: green; /* Cambia el color de la primera letra a verde */
+}
+
+/* Selecciona la primera línea de un párrafo */
+p::first-line {
+    font-style: italic; /* Aplica estilo en cursiva a la primera línea */
+    color: purple; /* Cambia el color de la primera línea a púrpura */
+}
+
+/* Aplica estilos a una parte del contenido generado con 'before' */
+p.note::before {
+    content: "Nota importante: "; /* Inserta el texto antes del párrafo */
+    font-weight: bold; /* Hace el texto en negrita */
+    color: red; /* Cambia el color del texto a rojo */
+}
+
+/* Aplica estilos a los marcadores de lista */
+ul::marker {
+    color: orange; /* Cambia el color de los marcadores a naranja */
+    font-size: 1.2em; /* Aumenta el tamaño de los marcadores */
+}
+
+/* Crea un pseudo elemento que se coloca sobre un elemento */
+div.overlay::after {
+    content: ""; /* Crea un contenido vacío */
+    position: absolute; /* Posiciona el pseudo elemento de forma absoluta */
+    top: 0; left: 0; right: 0; bottom: 0; /* Lo expande sobre todo el div */
+    background-color: rgba(0, 0, 0, 0.5); /* Aplica un fondo negro con opacidad del 50% */
+}

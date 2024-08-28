@@ -1,21 +1,33 @@
-<!DOCTYPE html> <!-- Declara el tipo de documento como HTML5 -->
-<html lang="es"> <!-- Abre la etiqueta HTML y especifica que el idioma del contenido es español -->
-<head> <!-- Contenedor para los metadatos del documento -->
-    <meta charset="UTF-8"> <!-- Establece la codificación de caracteres como UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la ventana gráfica para que la página sea responsive -->
-    <title>Ejemplo de Pseudo Elementos</title> <!-- Define el título de la página, que aparecerá en la pestaña del navegador -->
-    <link rel="stylesheet" href="Experiencia3.1.css"> <!-- Vincula una hoja de estilos CSS externa para aplicar estilos a la página -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores de Pseudo Clases</title>
+    <!-- Vincula el archivo CSS para aplicar los estilos -->
+    <link rel="stylesheet" href="Experiencia3(b).css">
 </head>
-<body> <!-- Abre la etiqueta body, que contiene el contenido visible de la página -->
-    <h1>Titulo Principal</h1> <!-- Encabezado de primer nivel con el texto "Titulo Principal" -->
-    <p>Este es un parrafo de texto donde se muestran los primeros elementos.</p><br> <!-- Párrafo de texto con un salto de línea después -->
+<body>
+    <!-- Lista de ejemplo -->
+    <ul>
+        <li>Primer elemento</li>
+        <li>Segundo elemento</li>
+        <li>Último elemento</li>
+    </ul>
 
-    <ul> <!-- Comienza una lista desordenada -->
-        <li>Elemento 1</li> <!-- Elemento de lista con el texto "Elemento 1" -->
-        <li>Elemento 2</li> <!-- Elemento de lista con el texto "Elemento 2" -->
-        <li>Elemento 3</li> <!-- Elemento de lista con el texto "Elemento 3" -->
-    </ul><br> <!-- Termina la lista desordenada con un salto de línea después -->
+    <!-- Enlace de ejemplo -->
+    <a href="https://example.com">Enlace a Example.com</a><br>
 
-    <input type="text" placeholder="Escribe aquí..."> <!-- Campo de texto con un marcador de posición que dice "Escribe aquí..." -->
+    <!-- Campo de texto -->
+    <input type="text" placeholder="Campo de texto"><br>
+
+    <!-- Campo de texto deshabilitado -->
+    <input type="text" placeholder="Deshabilitado" disabled><br>
+
+    <!-- Campo de texto obligatorio -->
+    <input type="email" placeholder="Correo electrónico (requerido)" required><br>
+
+    <!-- Campo de texto con validación -->
+    <input type="number" placeholder="Número (válido entre 1 y 10)" min="1" max="10">
 </body>
-</html> <!-- Cierra la etiqueta HTML -->
+</html>

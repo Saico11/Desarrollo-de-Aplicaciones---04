@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herencia y Cascada</title>
+    <!-- Vincula el archivo CSS para aplicar los estilos -->
+    <link rel="stylesheet" href="Experiencia4(c).css">
+</head>
+<body>
+    <!-- Todo el texto en body tendrá la fuente Georgia -->
+    <div>
+        <p>Este texto es verde azulado y de tamaño 18px (Herencia de color, cascada para tamaño).</p>
+        <!-- Párrafo con clase highlighted-text, será negrita -->
+        <p class="highlighted-text">Este texto es negrita y verde azulado (Herencia de color, clase específica).</p>
+    </div>
+
+    <!-- Párrafo fuera de div, será negro y de tamaño 16px -->
+    <p>Este texto es negro y de tamaño 16px (Cascada básica).</p>
+
+    <!-- Párrafo con clase special, será rojo y tendrá prioridad máxima debido a !important -->
+    <p class="special">Este texto es rojo (Cascada con !important).</p>
+</body>
+</html>

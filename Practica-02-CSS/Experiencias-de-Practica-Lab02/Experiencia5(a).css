@@ -1,0 +1,25 @@
+/* Uso de medidas absolutas: pixeles (px) */
+/* Establece el ancho y alto de un div en 200x200 píxeles */
+div.pixel-box {
+    width: 200px; /* Ancho fijo de 200px */
+    height: 200px; /* Altura fija de 200px */
+    background-color: lightblue; /* Color de fondo azul claro */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
+
+/* Uso de medidas absolutas: puntos (pt) */
+/* Establece el tamaño de fuente de un texto en 14 puntos */
+p.text-point {
+    font-size: 14pt; /* Tamaño de fuente de 14pt */
+    color: darkblue; /* Color del texto azul oscuro */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
+
+/* Uso de medidas absolutas: centímetros (cm) */
+/* Establece el tamaño de un div en 5x3 centímetros */
+div.cm-box {
+    width: 5cm; /* Ancho de 5cm */
+    height: 3cm; /* Altura de 3cm */
+    background-color: lightgreen; /* Color de fondo verde claro */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}

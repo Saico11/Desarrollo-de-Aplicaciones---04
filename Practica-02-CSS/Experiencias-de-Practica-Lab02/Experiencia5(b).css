@@ -1,0 +1,25 @@
+/* Uso de medidas relativas: porcentaje (%) */
+/* Establece el ancho de un div como 50% del contenedor padre */
+div.percent-box {
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    height: 100px; /* Altura fija de 100px */
+    background-color: coral; /* Color de fondo coral */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
+
+/* Uso de medidas relativas: em */
+/* Establece el tamaño de fuente basado en el tamaño de fuente del contenedor padre */
+p.text-em {
+    font-size: 1.5em; /* Tamaño de fuente es 1.5 veces el tamaño de la fuente padre */
+    color: darkred; /* Color del texto rojo oscuro */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
+
+/* Uso de medidas relativas: viewport width (vw) */
+/* Establece el ancho de un div como 30% del ancho del viewport */
+div.vw-box {
+    width: 30vw; /* Ancho del 30% del ancho del viewport */
+    height: 50px; /* Altura fija de 50px */
+    background-color: lightcoral; /* Color de fondo coral claro */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}

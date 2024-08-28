@@ -1,0 +1,30 @@
+/* Herencia: Todos los elementos dentro de body heredan la fuente Georgia */
+body {
+    font-family: Georgia, serif; /* Cambia la fuente a Georgia */
+}
+
+/* Herencia: Estilo de color heredado por elementos descendientes */
+div {
+    color: teal; /* Cambia el color del texto a verde azulado */
+}
+
+/* Cascada: Regla base para todos los párrafos */
+p {
+    font-size: 16px; /* Establece el tamaño de la fuente a 16px */
+    color: black; /* Cambia el color del texto a negro */
+}
+
+/* Cascada: Regla más específica para párrafos dentro de div, que prevalece sobre la anterior */
+div p {
+    font-size: 18px; /* Cambia el tamaño de la fuente a 18px, sobreescribiendo la regla general */
+}
+
+/* Clase específica para texto destacado */
+.highlighted-text {
+    font-weight: bold; /* Cambia el peso de la fuente a negrita */
+}
+
+/* Cascada: Uso de !important para sobreescribir cualquier otra regla */
+.special {
+    color: red !important; /* Cambia el color del texto a rojo, con prioridad máxima */
+}

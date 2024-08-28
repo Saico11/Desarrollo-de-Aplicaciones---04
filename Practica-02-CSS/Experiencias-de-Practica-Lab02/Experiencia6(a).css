@@ -1,0 +1,24 @@
+/* Uso de colores por nombre */
+/* Aplica el color de fondo 'red' a un div */
+div.red-box {
+    background-color: red; /* Color de fondo rojo */
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Relleno interno de 20px */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
+
+/* Aplica el color de fondo 'green' a un div */
+div.green-box {
+    background-color: green; /* Color de fondo verde */
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Relleno interno de 20px */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
+
+/* Aplica el color de fondo 'blue' a un div */
+div.blue-box {
+    background-color: blue; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    padding: 20px; /* Relleno interno de 20px */
+    margin-bottom: 10px; /* Espaciado inferior de 10px */
+}
