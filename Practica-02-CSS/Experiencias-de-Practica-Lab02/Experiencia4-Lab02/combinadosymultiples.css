@@ -1,0 +1,36 @@
+/* Selector de descendiente: aplica estilo a <span> dentro de <div> */
+div span {
+    color: red;
+}
+
+/* Selector de hijo directo: aplica estilo a <p> que es hijo directo de <article> */
+article > p {
+    font-size: 18px;
+    color: blue;
+}
+
+/* Selector de adyacencia: aplica estilo a <h2> que sigue inmediatamente a un <h1> */
+h1 + h2 {
+    color: green;
+}
+
+/* Selector de hermanos: aplica estilo a cualquier <p> que sigue a un <h2> */
+h2 ~ p {
+    color: purple;
+}
+
+/* Selector multiple: aplica estilo tanto a <h1> como a <h2> */
+h1, h2 {
+    font-family: Arial, sans-serif;
+    background-color: #dbdbdb;
+}
+
+/* Selector de clase: aplica estilo a todos los elementos con clase "highlight" */
+.highlight {
+    background-color: yellow;
+}
+
+/* Selector de atributo: aplica estilo a todos los <a> con el atributo target="_blank" */
+a[target="_blank"] {
+    color: orange;
+}
