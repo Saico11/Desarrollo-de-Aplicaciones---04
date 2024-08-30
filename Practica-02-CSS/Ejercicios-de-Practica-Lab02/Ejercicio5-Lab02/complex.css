@@ -1,0 +1,37 @@
+/* Diseño del menú lateral */
+aside {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+}
+
+/* Estilos del encabezado con imagen de fondo */
+header {
+    background-image: url('header-bg.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+/* Pseudo-clases y pseudo-elementos */
+h1::first-letter {
+    font-size: 3em;
+    color: red;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Grid para el contenido principal */
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-left: 270px;
+    padding: 20px;
+}

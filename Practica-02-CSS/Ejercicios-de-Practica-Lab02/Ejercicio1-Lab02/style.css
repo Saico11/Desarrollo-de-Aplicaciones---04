@@ -1,0 +1,33 @@
+/* Selectores combinados */
+header nav ul li a {
+    text-decoration: none;
+    color: darkblue;
+}
+
+/* Selectores múltiples */
+h1, h2, h3 {
+    font-family: 'Arial', sans-serif;
+    color: darkred;
+}
+
+p {
+    line-height: 1.6;
+    color: gray;
+}
+
+/* Pseudoclases */
+a:hover {
+    color: red;
+}
+
+/* Pseudoelementos */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Herencia y cascada */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f4f4f4;
+    color: black;
+}
