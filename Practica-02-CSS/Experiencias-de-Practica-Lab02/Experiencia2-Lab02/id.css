@@ -1,0 +1,53 @@
+/* Selecciona el elemento con el ID 'header' */
+#header {
+    background-color: lightgray;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Selecciona el elemento con el ID 'navigation' */
+#navigation {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+/* Selecciona el elemento con el ID 'main-section' */
+#main-section {
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Selecciona el elemento con el ID 'footer' */
+#footer {
+    background-color: #d0d0d0; 
+    padding: 10px; 
+    text-align: center;
+}
+
+/* Selecciona el elemento con el ID 'main-heading' */
+#main-heading {
+    color: blue;
+}
+
+/* Selecciona el elemento con el ID 'section-heading' */
+#section-heading {
+    color: green; 
+}
+
+/* Selecciona el elemento con el ID 'section-text' */
+#section-text {
+    color: black; 
+    font-size: 16px;
+}
+
+/* Selecciona el elemento con el ID 'nav-item1' */
+#nav-item1 {
+    list-style-type: none;
+    padding: 5px;
+    color: darkblue; 
+}
+
+/* Selecciona el elemento con el ID 'footer-text' */
+#footer-text {
+    color: darkgray;
+}

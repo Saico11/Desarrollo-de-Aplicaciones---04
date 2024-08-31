@@ -1,0 +1,47 @@
+/* Estilo para todos los encabezados h1 */
+h1 {
+    color: blue;
+    text-align: center;
+    font-size: 2em;
+}
+
+/* Cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Estilo para todos los párrafos */
+p {
+    font-family: Arial, sans-serif; 
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilo para todas las listas desordenadas (ul) */
+ul {
+    list-style-type: square;
+    margin-left: 20px; 
+    color: green;
+}
+
+/* Estilo para todas las secciones */
+section {
+    border: 1px solid #ccc;
+    padding: 10px; 
+    margin-top: 20px; 
+}
+
+/* Estilo para todos los encabezados h2 dentro de una sección */
+section h2 {
+    color: darkred; 
+    font-size: 1.5em; 
+}
+
+/* Estilo para el pie de página */
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px; 
+}
