@@ -1,0 +1,45 @@
+/* Inserta contenido antes de un párrafo */
+p::before {
+    content: "Nota: ";
+    font-weight: bold;
+    color: red;
+}
+
+/* Inserta contenido después de un párrafo */
+p::after {
+    content: " [Fin del texto]";
+    color: blue;
+}
+
+/* Selecciona la primera letra de un párrafo */
+p::first-letter {
+    font-size: 2em;
+    color: green;
+}
+
+/* Selecciona la primera línea de un párrafo */
+p::first-line {
+    font-style: italic;
+    color: purple;
+}
+
+/* Aplica estilos a una parte del contenido generado con 'before' */
+p.note::before {
+    content: "Nota importante: ";
+    font-weight: bold;
+    color: red; 
+}
+
+/* Aplica estilos a los marcadores de lista */
+ul::marker {
+    color: orange;
+    font-size: 1.2em;
+}
+
+/* Crea un pseudo elemento que se coloca sobre un elemento */
+div.overlay::after {
+    content: "";
+    position: absolute; 
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
