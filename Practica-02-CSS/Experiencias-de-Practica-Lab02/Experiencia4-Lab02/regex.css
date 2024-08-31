@@ -1,0 +1,29 @@
+/* Selecciona todos los atributos href que empiezan con 'https' */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* Selecciona todos los atributos href que terminan con '.pdf' */
+a[href$=".pdf"] {
+    color: red;
+    text-decoration: underline;
+    
+}
+
+/* Selecciona todos los atributos href que contienen 'google' */
+a[href*="google"] {
+    background-color: yellow;
+}
+
+/* Selecciona todos los atributos src que empiezan con 'img' */
+img[src^="img"] {
+    border: 2px solid blue;
+    padding: 15px;
+}
+
+/* Selecciona todos los inputs cuyo tipo es text */
+input[type="text"] {
+    border: 1px solid black;
+    padding: 5px;
+}
