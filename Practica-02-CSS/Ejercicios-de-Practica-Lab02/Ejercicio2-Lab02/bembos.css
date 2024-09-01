@@ -13,7 +13,7 @@ body {
 
 /* Cabecera */
 header {
-    background: url("https://web.archive.org/web/20130526175749im_/http://www.bembos.com.pe/bembos/images/bg_header_top.jpg");
+    background: url("https://raw.githubusercontent.com/Saico11/Desarrollo-de-Aplicaciones---04/main/Practica-02-CSS/Ejercicios-de-Practica-Lab02/Ejercicio2-Lab02/bg_header_top.jpg");
     color: white;
     padding: 10px 0;
 }
@@ -213,5 +213,5 @@ footer .container {
 
 /* fondo de la pagina */
 main{
-    background: url("https://web.archive.org/web/20130122122013im_/http://www.bembos.com.pe/bembos/images/bg_body_left.jpg") no-repeat;
+    background: url("https://raw.githubusercontent.com/Saico11/Desarrollo-de-Aplicaciones---04/main/Practica-02-CSS/Ejercicios-de-Practica-Lab02/Ejercicio2-Lab02/bg_body_left.jpg") no-repeat;
 }
