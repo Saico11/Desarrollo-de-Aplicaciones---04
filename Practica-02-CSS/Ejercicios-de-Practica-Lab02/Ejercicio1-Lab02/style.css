@@ -51,7 +51,7 @@ p::first-letter {
 body {
     font-family: 'Verdana', sans-serif;
     background-color: #f4f4f4;
-    background: url("https://thumb.ac-illust.com/d9/d9719af314d55c5b462d16316117bc8f_t.jpeg") no-repeat center center fixed;
+    background: url("https://raw.githubusercontent.com/Saico11/Desarrollo-de-Aplicaciones---04/main/Practica-02-CSS/Ejercicios-de-Practica-Lab02/Ejercicio1-Lab02/fondo-claro.jpeg") no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
