@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botón con Animación</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Estructura general */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f7f7f7;
+            background: url("https://raw.githubusercontent.com/Saico11/Desarrollo-de-Aplicaciones---04/main/Practica-02-CSS/Ejercicios-de-Practica-Lab02/Ejercicio2-Lab02/bg_body_left.jpg") no-repeat;
+        }
+
+        /* Botón de comprar u ordenar con animaciones */
+        .btn-order {
+            background: linear-gradient(to bottom, #fc4a50, #f61b22 50%, #ef1e25 50%, #a40309);
+            box-shadow: 0 2px 2px rgba(36, 3, 3, 0.4);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .btn-order:hover {
+            animation: bounce 0.5s ease-in-out;
+            background: linear-gradient(to bottom, #ed8488, #dc595d 50%, #e1595e 50%, #9a3a3d);
+        }
+
+        /* Definición de la animación bounce */
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-5px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn-order">Ordenar Ahora</button>
+
+</body>
+</html>
