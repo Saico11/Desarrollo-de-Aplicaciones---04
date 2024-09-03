@@ -1,0 +1,80 @@
+/* Herencia */
+
+/* 1. Estilo para el elemento body */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+/* 2. Estilo para los encabezados h1 y h2 que heredan de body */
+h1, h2 {
+    color: #0066cc;
+}
+
+/* 3. Estilo para párrafos que heredan el color de body */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* 4. Estilo para el elemento header que hereda del body */
+header {
+    background-color: #f4f4f4;
+    padding: 10px;
+}
+
+/* 5. Estilo para elementos ul y li que heredan del body */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+/* 6. Estilo para sección que hereda de body */
+section {
+    margin: 20px 0;
+}
+
+/* 7. Estilo para el footer que hereda del body */
+footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Cascada */
+
+/* 1. Estilo para el primer nivel de encabezado */
+header h1 {
+    font-size: 24px;
+}
+
+/* 2. Estilo para el primer nivel de navegación dentro de header */
+header nav ul {
+    padding: 0;
+}
+
+/* 3. Estilo para los párrafos dentro de .secundaria */
+.secundaria .texto {
+    font-style: italic;
+}
+
+/* 4. Estilo para h2 dentro de main */
+main h2 {
+    border-bottom: 2px solid #0066cc;
+    padding-bottom: 5px;
+}
+
+/* 5. Estilo para p dentro de main */
+main p {
+    color: #666;
+}

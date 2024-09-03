@@ -3,85 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS en Cabecera</title>
+    <title>css en cabecera</title>
     <style>
-        /* Estilos para el header */
-        header {
-            background-color: lightblue;
-            text-align: center;
-            padding: 10px;
-        }
-        
-        /* Estilos para el h1 */
-        header h1 {
-            color: darkblue;
-        }
-
-        /* Estilos para el nav */
-        nav {
-            background-color: #f0f0f0;
-            padding: 10px;
-        }
-        
-        /* Estilos para el ul dentro del nav */
-        nav ul {
-            list-style-type: none;
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
             padding: 0;
         }
-
-        /* Estilos para los li dentro del ul */
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        /* Estilos para el section */
-        section {
-            background-color: #e0e0e0;
-            padding: 20px;
-        }
-
-        /* Estilos para el h2 dentro del section */
-        section h2 {
-            color: green;
-        }
-
-        /* Estilos para el p dentro del section */
-        section p {
-            color: black;
-            font-size: 16px;
-        }
-
-        /* Estilos para el footer */
-        footer {
-            background-color: #d0d0d0;
+        header, nav, footer {
+            background-color: #0cb967;
+            color: white;
             text-align: center;
+            padding: 10px 0;
+        }
+        nav {
             padding: 10px;
         }
-
-        /* Estilos para el p dentro del footer */
-        footer p {
-            color: darkgray;
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        a {
+            color: #0cb967;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Encabezado Principal</h1>
+        <h1>UCSM</h1>
     </header>
     <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Servicios</li>
-            <li>Contacto</li>
-        </ul>
+        <a href="#">Biblioteca</a>
+        <a href="#">Estudiantes</a>
+        <a href="#">Docentes</a>
+        <a href="#">Aula Virtual</a>
     </nav>
-    <section>
-        <h2>Sección Principal</h2>
-        <p>Este es un párrafo en la sección principal.</p>
-    </section>
+    <main>
+        <section>
+            <h2>Sobre la Universidad</h2>
+            <p>La Universidad Católica de Santa María, es una institución educativa sin fines de lucro y emblemática de Arequipa, que el 2021 ha cumplido 60 años de vida institucional, antigüedad y experiencia que le permiten dar solidez a las escuelas profesionales que oferta. Nuestros estudiantes tienen la seguridad de llegar a ser profesionales altamente competitivos, ciudadanos críticos y creativos, capaces de resolver los problemas de la comunidad y su entorno, además de proyectarse al futuro con una clara visión internacional.</p>
+        </section>
+        <section>
+            <h2>Información adicional</h2>
+            <p>Para más información sobre la universidad, visite el sitio web:</p>
+            <address>
+                <a href="https://www.ucsm.edu.pe" target="_blank">ucsm.edu.pe</a>
+            </address>
+        </section>
+    </main>
     <footer>
-        <p>Pie de página</p>
+        <p>&copy; 2024 Universidad Católica de Santa María. Todos los derechos reservados. UCSM</p>
     </footer>
 </body>
 </html>

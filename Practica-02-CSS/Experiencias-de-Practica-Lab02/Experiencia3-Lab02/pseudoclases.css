@@ -1,0 +1,50 @@
+/* Estilo para el primer hijo de un elemento padre */
+li:first-child {
+    color: rgb(20, 242, 20); 
+}
+
+/* Estilo para el último hijo de un elemento padre */
+li:last-child {
+    color: rgb(28, 28, 247);
+}
+
+/* Estilo para enlaces visitados */
+a:visited {
+    color: rgb(186, 17, 186);
+}
+
+/* Estilo para enlaces en estado hover */
+a:hover {
+    color: rgb(234, 160, 22);
+    text-decoration: underline; 
+}
+
+/* Estilo para enlaces activos */
+a:active {
+    color: rgb(166, 33, 33); /* Cambia el color del enlace cuando está activo a rojo */
+}
+
+/* Estilo para elementos input que están enfocados */
+input:focus {
+    border-color: rgb(28, 144, 28);
+}
+
+/* Estilo para elementos input que están deshabilitados */
+input:disabled {
+    background-color: #ccc;
+}
+
+/* Estilo para elementos input válidos */
+input:valid {
+    border-color: rgb(12, 12, 235);
+}
+
+/* Estilo para elementos input no válidos */
+input:invalid {
+    border-color: rgb(229, 30, 30);
+}
+
+/* Estilo para elementos input requeridos */
+input:required {
+    border-color: rgb(234, 160, 22);
+}
