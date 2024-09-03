@@ -3,6 +3,7 @@ body { /* CUERPITO */
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
 header {    /* CABECERA */
@@ -41,26 +42,29 @@ header button {
     padding: 20px;
 }
 
-.feature {
+.feature {  /* Cartas para cada caracteristica */
     flex: 1;
     margin: 10px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 3px 8px rgb(177, 177, 177);
 }
 
-.feature img {
-    width: 200px;
+.feature img {  /* tamaño de imagenes/iconos */
+    width: 150px;
     height: auto;
 }
 
 .feature h3 {
-    margin-top: 10px;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .feature p {
-    font-size: 14px;
+    font-size: 18px;
     line-height: 1.6;
 }
 
+/* Primer breakpoint */
 @media (max-width: 900px) {
     .features {
         flex-direction: column;
@@ -71,6 +75,7 @@ header button {
     }
 }
 
+/* Segundo breakpoint */
 @media (max-width: 480px) {
     header h1 {
         font-size: 20px;
