@@ -94,6 +94,12 @@ button:hover {
     background-color: #05716f;
 }
 
+.menu-botoncito {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
 /* primer breakpoint 900px */
 @media (max-width: 900px) {
     .producto-carta {
@@ -118,5 +124,10 @@ button:hover {
 
     .producto-carta {
         flex-basis: 100%;
+    }
+
+    .menu-botoncito {
+        display: block;
+        color: #fff;
     }
 }
