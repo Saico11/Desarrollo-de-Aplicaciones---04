@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {    /* titulo principal */
+    text-align: center;
+    color: #919191;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4A148C;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 20px;
+}
+
+.nav-links {    /* opciones de arriba */
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin: 0 150px
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.producto-carta {
+    display: flex;
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: space-between; /* Asegura que el botón esté al final */
+    margin: 10px;
+    text-align: center;
+    flex-basis: 30%;
+    background-color: #fcfcfc;
+}
+
+.producto-carta img {
+    max-width: 100%;
+    height: auto;
+}
+
+.producto-carta h3 {
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.producto-carta p {
+    font-size: 16px;
+    margin: 21px 0;
+
+}
+
+button {
+    background-color: #009693;
+    color: white;
+    padding: 14px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bold;;
+}
+
+button:hover {
+    background-color: #05716f;
+}
+
+.menu-botoncito {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* primer breakpoint 900px */
+@media (max-width: 900px) {
+    .producto-carta {
+        flex-basis: 45%;
+    }
+}
+
+/* Segundo breakpoint 480px */
+@media (max-width: 480px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .producto-carta {
+        flex-basis: 100%;
+    }
+
+    .menu-botoncito {
+        display: block;
+        color: #fff;
+    }
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 1 (b)</title>
+    <link rel="stylesheet" href="experiencia1(b).css">
+</head>
+<body>
+    <header>
+        <h1>Experiencia 01 (b): Declaración de código en etiquetas script</h1>
+    </header>
+    
+    <main>
+        <section>
+            <p id="mensaje">Haz clic en el botón para conocer tu destino...</p>
+            <button id="botonCambiar">CLICK ACÁ</button>
+        </section>
+    </main>
+</body>
+
+<script>
+    const mensaje = document.getElementById('mensaje');
+    const boton = document.getElementById('botonCambiar');
+
+    function cambiarMensaje() {
+        mensaje.innerText = 'El fin del mundo será el 29 de octubre del año 2048!';
+    }
+
+    boton.addEventListener('click', cambiarMensaje);
+</script>
+</html>
