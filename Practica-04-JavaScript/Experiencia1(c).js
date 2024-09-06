@@ -1,3 +1,1 @@
-document.getElementById("Boton").onclick = function() {
-    alert('¡Hola desde un archivo JavaScript externo!');
-}
+console.log("¡Hola desde un archivo externo!");

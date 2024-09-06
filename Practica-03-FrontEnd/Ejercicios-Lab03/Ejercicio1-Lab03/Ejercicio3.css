@@ -1,0 +1,78 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-item {
+    text-align: center;
+    width: 30%;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Breakpoint para 900px */
+@media screen and (max-width: 900px) {
+    .product-item {
+        width: 45%;
+    }
+}
+
+/* Breakpoint para 480px */
+@media screen and (max-width: 480px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
