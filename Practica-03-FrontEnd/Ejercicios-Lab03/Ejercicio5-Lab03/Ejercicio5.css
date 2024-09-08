@@ -1,80 +1,233 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #fdfdfd;
+    padding: 20px;
+    margin: 0;
 }
 
+.item1-image{
+    flex-shrink: 0; /* Evita que la imagen se reduzca demasiado */
+    width: 100px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Contenedor principal con Grid */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    padding: 20px;
+    grid-template-areas:
+        "item1 item1 item3 item3"
+        "item4 item5 item5 item6"
+        "item7 item8 item8 item6";
+    grid-gap: 20px;
+    grid-auto-rows: minmax(200px, auto);
 }
 
+/* Definición de las áreas del grid */
+.item1 { 
+    grid-area: item1; 
+    background-color: #fcfcfc; 
+}
+
+.item3 { 
+    grid-area: item3; 
+    background-color: #f2f2f2;
+}
+
+.item4 { 
+    grid-area: item4; 
+    background-color: #ff6a3d;
+}
+.item5 { 
+    grid-area: item5; 
+    background-color: #fcfcfc; 
+}
+
+.item6 { 
+    grid-area: item6;
+    background-color: #8e76bc; 
+}
+
+.item7 { 
+    grid-area: item7; 
+    background-color: #fcfcfc; 
+}
+
+.item8 { 
+    grid-area: item8; 
+    background-color: #93b7b6; 
+}
+
+/* Centrado de contenido dentro de cada grid item */
 .item {
-    background-color: rgb(234, 224, 224);
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del contenido a columna */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    border-radius: 10px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(246, 246, 246, 0.1);
+    font-size: 18px;
 }
 
-.item img {
+/* ITEM 1 */
+.item1 h1 {
+    margin: 0 10px 10px;
+    margin-right: 150px;
+    font-size: 24px;
+    color: #515151;
+}
+
+.item1 h2 {
+    margin: 0 10px 10px;
+    margin-right: 150px;
+    font-size: 14px;
+    color: #6c6c6c;
+}
+
+.item1 p {
+    margin: 0 10px 10px;
+    font-size: 16px;
+    color: #a2a2a2;
+    margin-right: 150px;
+}
+
+.item1-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item1-text {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.item1-image img {
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
 }
 
-.item1 {
-    grid-column: span 2;
+/* ITEM 3 */
+.item3 h2{
+    color: #6c6c6c;
+    font-size: 12px;
 }
 
-.item2 {
-    grid-column: span 2;
+.item3 h1{
+    margin: 0 55px 10px;
+    font-size: 36px;
+    color: #3e3e3e;
 }
 
-.item3 {
-    grid-column: span 2;
+.item3 a {
+    color: #4db6ac;
 }
 
-.item4 {
-    grid-column: span 1;
+/* ITEM 4*/
+.item4 h2{
+    margin: 10px 20px 10px;
+    color: #fff;
+    font-size: 24px;
 }
 
-.item5 {
-    grid-column: span 1;
+.item4 p {
+    margin: 15px 10px 10px;
+    font-size: 16px;
+    color: #ffbf00;
 }
 
-.item6 {
-    grid-column: span 2;
+.item4-image img{
+    max-width: 70%;
+    height: auto;
 }
 
-.item7 {
-    grid-column: span 2;
+/* ITEM 7 */
+.item7 h2{
+    margin: 10px 20px 10px;
+    color: #525252;
+    font-size: 24px;
 }
 
-@media (max-width: 768px) {
+.item7 p {
+    margin: 15px 10px 10px;
+    font-size: 16px;
+    color: #29a9b7;
+}
+
+/* ITEM 8 */
+.item8-text {
+    flex: 1;
+    margin: 50px;
+}
+
+.item8 h2 {
+    margin: 0 50px 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+/* ITEM 6 */
+.item6 h2{
+    margin: 0 50px 10px;
+    font-size: 36px;
+    color: #fff;
+}
+
+.item6 p{
+    color: #fff;
+    margin: 15px;
+    font-size: 16px;
+}
+
+.item6 button{
+    margin-top: 10px;
+    padding: 10px 25px;
+    font-size: 18px;
+    background-color: #fbc64c;
+    color: #000;
+    border: none;
+    border-radius: 20px;
+}
+
+.item5 a{
+    color: #4db6ac;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+/* Breakpoints para pantallas medianas */
+@media (max-width: 900px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "item1"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8";
+        grid-template-columns: 1fr;
     }
-
-    .item {
-        grid-column: span 2;
-    }
-
-    .item8 {
-        grid-column: span 2;
+    .item4-image{
+        max-width: 50%;
+        height: auto;
     }
 }
 
+/* Breakpoints para pantallas pequeñas (móviles) */
 @media (max-width: 480px) {
     .grid-container {
+        grid-template-areas:
+            "item1"
+            "item3"
+            "item4"
+            "item5"
+            "item6"
+            "item7"
+            "item8";
         grid-template-columns: 1fr;
     }
 }
