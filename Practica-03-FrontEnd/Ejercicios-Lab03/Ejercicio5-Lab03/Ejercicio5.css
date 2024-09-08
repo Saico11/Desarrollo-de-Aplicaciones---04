@@ -198,7 +198,7 @@ body {
     font-weight: bold;
 }
 
-/* Breakpoints para pantallas medianas */
+/* Breakpoints para 900px */
 @media (max-width: 900px) {
     .grid-container {
         grid-template-areas:
@@ -215,9 +215,16 @@ body {
         max-width: 50%;
         height: auto;
     }
+
+    .item1 h1 {
+        margin: 0 10px 10px;
+        margin-right: 70px;
+        font-size: 24px;
+        color: #515151;
+    }
 }
 
-/* Breakpoints para pantallas pequeñas (móviles) */
+/* Breakpoint para 480px */
 @media (max-width: 480px) {
     .grid-container {
         grid-template-areas:
@@ -229,5 +236,12 @@ body {
             "item7"
             "item8";
         grid-template-columns: 1fr;
+    }
+    
+    .item1 h1 {
+        margin: 0 10px 10px;
+        margin-right: 10px;
+        font-size: 24px;
+        color: #515151;
     }
 }
