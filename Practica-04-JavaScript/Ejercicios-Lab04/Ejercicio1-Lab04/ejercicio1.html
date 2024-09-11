@@ -10,13 +10,14 @@
     <!-- Contenedor principal -->
     <div class="container">
         <h1>Calculadora de Propinas</h1>
-        <!-- Contenedor para insertar informacion-->
+	<!-- Contenedor para insertar informacion-->
+        <img src="https://img1.picmix.com/output/stamp/thumb/0/1/1/6/1456110_56f42.gif">
         <div class="container-2">
             <label for="totalCuenta">Monto Total de la Cuenta (S/.):</label>
-            <input type="number" id="totalCuenta" placeholder>
+            <input type="number" id="totalCuenta" placeholder="Ingresa el monto de la cuenta">
 
             <label for="porcentajePropina">Porcentaje de Propina (%):</label>
-            <input type="number" id="porcentajePropina">
+            <input type="number" id="porcentajePropina" placeholder="Ingresa el porcentaje de propina">
 
             <button onclick="calcularPropina()">Calcular</button>
 
@@ -25,6 +26,7 @@
                 <p>Total a Pagar: <b>S/.</b><span id="total"></span></p>
             </div>
         </div>
+
     </div>
     <script src="ejercicio1.js"></script>
 </body>
