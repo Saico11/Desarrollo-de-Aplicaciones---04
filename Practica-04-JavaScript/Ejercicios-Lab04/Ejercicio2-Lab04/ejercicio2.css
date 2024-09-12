@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(#000, #0e245f) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.container {
+    background: #ffffffa7;
+    background: linear-gradient(#ffffffa7, #dbe3f9a7);
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3), inset 0 0 10px 1px rgba(255, 255, 255, 0.983);;
+    width: 350px;
+    text-align: center;
+}
+
+.container-2{
+    display: grid;
+    place-items: center;
+    padding: 5px 25px;
+}
+
+h1 {
+    color: #333;
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+}
+
+input {
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #cccccce2;
+    border-radius: 12px;
+}
+
+select {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #cccccce2;
+    border-radius: 12px;
+}
+
+button {
+    padding: 10px 20px;
+    background: radial-gradient(farthest-corner at bottom center, rgba(102, 219, 139, 0.7), transparent), linear-gradient(to bottom, #28a745, #28a745);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: radial-gradient(farthest-corner at bottom center, rgba(102, 219, 139, 0.7), transparent), linear-gradient(to bottom, #1f8937, #1f8937);
+}
+
+#resultado {
+    margin-top: 20px;
+}
+
+#resultado p {
+    margin: 5px 0;
+    font-weight: bold;
+}

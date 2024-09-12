@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2: Conversor de Temperatura</title>
+    <link rel="stylesheet" href="ejercicio2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Temperatura</h1>
+        <div class="container-2">
+            <label for="temperatura">Ingresa la temperatura:</label>
+            <input type="number" id="temperatura" placeholder="Temperatura">
+            <label for="escala">Selecciona la escala:</label>
+            <!-- Opciones para escala -->
+            <select id="escala">
+                <option value="C">Celsius (C°) - Fahrenheit (F°)</option>
+                <option value="F">Fahrenheit (F°) - Celsius (C°)</option>
+            </select>
+            <button onclick="convertirTemperatura()">Convertir</button>
+            <p id="resultado"></p>
+        </div>
+    </div>
+    <script src="ejercicio2.js"></script>
+</body>
+</html>
