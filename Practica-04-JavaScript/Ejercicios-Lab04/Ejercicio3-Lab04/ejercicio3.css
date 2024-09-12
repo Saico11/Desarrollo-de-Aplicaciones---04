@@ -6,8 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*background: linear-gradient(to bottom right, #a9d6e5, #62b6cb) no-repeat;*/
-    background: url("https://pbs.twimg.com/media/FhkHbDaaEAAwT3K.jpg:large");
+    background: url("https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-04-JavaScript/Ejercicios-Lab04/Ejercicio3-Lab04/fondo-azul.jpg?raw=true");
     background-size: cover;
     background-attachment: fixed;
     display: flex;
