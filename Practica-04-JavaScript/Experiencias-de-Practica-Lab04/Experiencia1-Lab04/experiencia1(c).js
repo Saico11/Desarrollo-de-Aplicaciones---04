@@ -1,8 +1,12 @@
-    const mensaje = document.getElementById('mensaje');
-    const boton = document.getElementById('botonCambiar');
+const boton = document.getElementById('botonCambiar');
+const mensaje = document.getElementById('mensaje');
 
-    function cambiarMensaje() {
-        mensaje.innerText = 'Mañana será viernes!';
-    }
+function cambiarColorYMensaje() {
+    // Cambiar el color de fondo
+    document.body.style.background = 'url("https://wallpapers.com/images/featured/sky-mvehfqz6w2ges2dj.jpg")';
+    
+    // Cambiar el mensaje
+    mensaje.innerText = 'Irás al cielo!';
+}
 
-    boton.addEventListener('click', cambiarMensaje);
+boton.addEventListener('click', cambiarColorYMensaje);
