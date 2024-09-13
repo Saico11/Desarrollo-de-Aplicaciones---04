@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 4(b): Agregar Propiedades a Objetos en JavaScript</title>
+</head>
+<body>
+    <h1>Ejemplos de Agregar Propiedades a Objetos</h1>
+    <script>
+        // 1. Usando iniciadores de objetos
+        const coche = {
+            marca: "Toyota",
+            modelo: "Corolla",
+            año: 1997
+        };
+        coche.color = "Negro";
+        coche.año = 1997;
+        console.log(coche); 
+
+        // 2. Usando métodos constructores
+        function Coche(marca, modelo, año) {
+            this.marca = marca;
+            this.modelo = modelo;
+            this.año = año;
+        }
+        const miCoche = new Coche("Honda", "Civic", 2006);
+        miCoche.color = "Azul";
+        miCoche.año = 2006;
+        console.log(miCoche);
+
+        // 3. Usando Object.create()
+        const animal = {
+            especie: "Desconocida",
+            hacerSonido: function() {
+                console.log("Este animal hace un sonido.");
+            }
+        };
+        const gato = Object.create(animal);
+        gato.nombre = "Michi";
+        gato.edad = 3;
+        gato.hacerSonido = function() {
+            console.log("Miau Miau");
+        };
+        console.log(gato);
+        console.log(gato.especie); // Heredada
+        gato.hacerSonido();
+    </script>
+</body>
+</html>

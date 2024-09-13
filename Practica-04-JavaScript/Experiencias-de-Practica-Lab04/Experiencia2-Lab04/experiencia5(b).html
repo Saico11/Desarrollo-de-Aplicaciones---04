@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 5(b): Manipulación de Arrays</title>
+</head>
+<body>
+    <h1>Experiencia 5(b): Manipulación de Arrays</h1>
+
+    <h2>Resultados:</h2>
+    <p id="resultados"></p>
+
+    <script>
+        // Arrays iniciales
+        const numeros = [1, 2, 3, 4, 5, 6];
+        const palabras = ["Hola", "Adios", "Tangamandapio", "Si"];
+        const personas = [
+          { nombre: "Cueva", edad: 32 },
+          { nombre: "Terminator", edad: 38 },
+          { nombre: "Alan Garcia", edad: 74 }
+        ];
+
+        // Manipulaciones
+        numeros.push(10); // Agregar número al final
+        palabras.unshift("¡Hola!"); // Agregar palabra al inicio
+        numeros.pop();  // Eliminar el último número
+        palabras.shift();  // Eliminar la primera palabra
+        let index = palabras.indexOf("Tangamandapio"); // Buscar "Tangamandapio"
+        let personaMayor = personas.find(p => p.edad > 38); // Buscar persona mayor de 38
+        let personasMayores = personas.filter(p => p.edad > 38); // Filtrar personas mayores de 38
+        numeros.sort((a, b) => a - b); // Ordenar números
+        palabras.sort(); // Ordenar palabras
+        numeros.splice(2, 1, 99); // Reemplazar tercer número con 99
+
+        // Mostrar los resultados en la página
+        function mostrarResultados() {
+          const resultados = document.getElementById("resultados");
+          resultados.innerHTML = `
+            <strong>Números:</strong> ${numeros.join(", ")} <br>
+            <strong>Palabras:</strong> ${palabras.join(", ")} <br>
+            <strong>Personas:</strong> ${personas.map(p => p.nombre + " (" + p.edad + " años)").join(", ")} <br>
+            <strong>Índice de "Tangamandapio":</strong> ${index} <br>
+            <strong>Primera persona mayor de 38:</strong> ${personaMayor.nombre} (${personaMayor.edad} años) <br>
+            <strong>Personas mayores de 38:</strong> ${personasMayores.map(p => p.nombre).join(", ")}
+          `;
+        }
+
+        mostrarResultados(); // Mostrar los resultados
+    </script>
+</body>
+</html>

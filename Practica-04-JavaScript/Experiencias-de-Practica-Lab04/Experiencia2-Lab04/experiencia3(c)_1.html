@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 3(c): Ámbito de Función: Ejemplo 1</title>
+</head>
+<body>
+    <h1>Ámbito de Función en JavaScript</h1>
+    <script>
+        function exampleFunction() {
+            const x = "declared inside function";
+            console.log("Inside function");
+            console.log(x);
+        }
+
+        exampleFunction();
+        console.log(x); // Provocará un error
+    </script>
+</body>
+</html>

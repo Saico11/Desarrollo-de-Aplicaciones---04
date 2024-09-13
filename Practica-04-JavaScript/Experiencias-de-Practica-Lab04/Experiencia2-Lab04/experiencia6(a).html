@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 6(a): Uso del Objeto Window</title>
+</head>
+<body>
+    <h1>Experiencia 6(a): Propiedades y Métodos del Objeto Window</h1>
+    <p id="resultados"></p>
+    <button onclick="usarMetodosWindow()">Usar Métodos de Window</button>
+
+    <script>
+        // Función para visualizar algunas propiedades del objeto Window
+        function mostrarPropiedadesWindow() {
+            const ancho = window.innerWidth;
+            const alto = window.innerHeight;
+            const url = window.location.href;
+            const host = window.location.hostname;
+            const agenteUsuario = window.navigator.userAgent;
+
+            const resultados = document.getElementById('resultados');
+            resultados.innerHTML = `
+                <strong>Ancho de la ventana:</strong> ${ancho}px <br>
+                <strong>Alto de la ventana:</strong> ${alto}px <br>
+                <strong>URL actual:</strong> ${url} <br>
+                <strong>Host actual:</strong> ${host} <br>
+                <strong>Navegador:</strong> ${agenteUsuario} <br>
+            `;
+        }
+
+        // Usar algunos métodos del objeto Window
+        function usarMetodosWindow() {
+            // Mostrar una alerta
+            alert("Este es un mensaje de alerta.");
+
+            // Confirmación de una acción
+            const respuesta = confirm("¿Quieres continuar?");
+            if (respuesta) {
+                alert("Continuamos con la acción.");
+            } else {
+                alert("Cancelaste la acción.");
+            }
+
+            // Abrir una nueva ventana
+            window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ", "_blank");
+        }
+
+        // Llamar a la función al cargar la página
+        mostrarPropiedadesWindow();
+    </script>
+</body>
+</html>

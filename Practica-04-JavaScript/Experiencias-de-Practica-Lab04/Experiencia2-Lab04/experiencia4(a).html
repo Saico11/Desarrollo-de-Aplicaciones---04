@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 4(a): Creación de Objetos en JavaScript</title>
+</head>
+<body>
+    <h1>Creación de Objetos en JavaScript</h1>
+    <script>
+        // 1. Usando iniciadores de objetos (literal)
+        const persona = {
+            nombre: "Juanito Alcachofa",
+            edad: 30,
+            saludo: function() {
+                console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años.`);
+            }
+        };
+        persona.saludo(); // Imprime: Hola, me llamo Juanito Alcachofa y tengo 30 años.
+
+        // 2. Usando métodos constructores
+        function Persona(nombre, edad) {
+            this.nombre = nombre;
+            this.edad = edad;
+            this.saludo = function() {
+                console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años.`);
+            };
+        }
+
+        const persona1 = new Persona("Matilda", 8);
+        const persona2 = new Persona("Carlos Villagran", 80);
+        persona1.saludo(); // Imprime: Hola, me llamo Matilda y tengo 8 años.
+        persona2.saludo(); // Imprime: Hola, me llamo Carlos Villagran y tengo 80 años.
+
+        // 3. Usando Object.create()
+        const animal = {
+            tipo: "Desconocido",
+            sonido: function() {
+                console.log("Este animal hace un sonido.");
+            }
+        };
+
+        const perro = Object.create(animal);
+        perro.tipo = "Perro";
+        perro.ladrar = function() {
+            console.log("Guau Guau!");
+        };
+
+        console.log(perro.tipo); // Imprime: Perro
+        perro.sonido(); // Imprime: Este animal hace un sonido.
+        perro.ladrar(); // Imprime: Guau Guau!
+    </script>
+</body>
+</html>

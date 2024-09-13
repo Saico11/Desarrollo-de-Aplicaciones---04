@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 3(c): Ámbito de Función: Ejemplo 2</title>
+</head>
+<body>
+    <h1>Ámbito de Función con Variables Globales</h1>
+    <script>
+        const x = "declared outside function";
+
+        function exampleFunction() {
+            console.log("Inside function");
+            console.log(x); // x es accesible aquí
+        }
+
+        exampleFunction();
+        console.log("Outside function");
+        console.log(x); // También accesible aquí
+    </script>
+</body>
+</html>

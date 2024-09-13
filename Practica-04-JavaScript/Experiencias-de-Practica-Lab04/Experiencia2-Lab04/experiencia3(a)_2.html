@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 3(a): Función de primera clase: greeting()</title>
+</head>
+<body>
+    <script>
+        function sayHello() {
+            return "Hello, ";
+        }
+
+        function greeting(helloMessage, name) {
+            console.log(helloMessage() + name);
+        }
+
+        // Pasar `sayHello` como argumento a `greeting`
+        greeting(sayHello, "JavaScript!");
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 5(a): Uso de Arrays</title>
+</head>
+<body>
+    <h1>Experiencia 5(a): Uso de Arrays</h1>
+
+    <h2>Resultados:</h2>
+    <p id="resultados"></p>
+
+    <script>
+        // Parte 1: Crear arrays
+        const numeros = [1, 2, 3, 4, 5]; // Array numérico
+        const palabras = new Array("Hola", "Adios", "Tangamandapio"); // Array de strings
+        const personas = Array.of(
+          { nombre: "Cueva", edad: 32 },
+          { nombre: "Terminator", edad: 38 }
+        ); // Array de objetos
+
+        // Parte 2: Rutinas para agregar datos
+
+        // Agregar números
+        function agregarNumeros(numero) {
+          numeros.push(numero);
+          console.log("Números actualizados:", numeros);
+        }
+
+        // Agregar palabras
+        function agregarPalabras(palabra) {
+          palabras.push(palabra);
+          console.log("Palabras actualizadas:", palabras);
+        }
+
+        // Agregar personas
+        function agregarPersona(nombre, edad) {
+          personas.push({ nombre: nombre, edad: edad });
+          console.log("Personas actualizadas:", personas);
+        }
+
+        // Parte 4: Visualizar resultados en la página web
+        function mostrarResultados() {
+          const resultados = document.getElementById("resultados");
+          resultados.innerHTML = `
+            <strong>Números:</strong> ${numeros.join(", ")} <br>
+            <strong>Palabras:</strong> ${palabras.join(", ")} <br>
+            <strong>Personas:</strong> ${personas.map(p => p.nombre + " (" + p.edad + " años)").join(", ")}
+          `;
+        }
+
+        // Inicializar mostrando los resultados
+        mostrarResultados();
+
+        // Agregar datos para probar
+        agregarNumeros(6); // Añadir un número
+        agregarPalabras("Si"); // Añadir una palabra
+        agregarPersona("Alan García", 74); // Añadir una persona
+
+        // Mostrar resultados actualizados
+        mostrarResultados();
+    </script>
+</body>
+</html>

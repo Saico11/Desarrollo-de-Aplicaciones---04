@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 6(b): Uso del Objeto Array</title>
+</head>
+<body>
+    <h1>Experiencia 6(b): Uso del Objeto Array</h1>
+    <p id="resultados"></p>
+    <button onclick="usarMetodosArray()">Usar Métodos de Array</button>
+
+    <script>
+        // Creamos un array de ejemplo
+        let frutas = ["Manzana", "Platano", "Cereza", "Durazno"];
+
+        // Función para visualizar las propiedades del array
+        function mostrarPropiedadesArray() {
+            const longitud = frutas.length; // Propiedad "length" del array
+
+            // Mostrar el contenido y la longitud del array
+            const resultados = document.getElementById('resultados');
+            resultados.innerHTML = `
+                <strong>Array actual:</strong> ${frutas.join(", ")} <br>
+                <strong>Longitud del array:</strong> ${longitud} <br>
+            `;
+        }
+
+        // Función para usar algunos métodos del objeto Array
+        function usarMetodosArray() {
+            // Mostrar estado inicial del array
+            mostrarPropiedadesArray();
+
+            // 1. Agregar un elemento al final del array usando "push()"
+            frutas.push("Naranja");
+            console.log("Después de push:", frutas);
+            mostrarPropiedadesArray();
+
+            // 2. Eliminar el último elemento del array usando "pop()"
+            frutas.pop();
+            console.log("Después de pop:", frutas);
+            mostrarPropiedadesArray();
+
+            // 3. Usar "slice()" para obtener una copia parcial del array
+            const frutasCopia = frutas.slice(1, 3); // Desde índice 1 hasta 3 (sin incluir el 3)
+            console.log("Resultado de slice:", frutasCopia);
+
+            // 4. Usar "splice()" para eliminar e insertar elementos
+            frutas.splice(2, 1, "Kiwi", "Mango"); // Elimina 1 elemento desde el índice 2 e inserta 2 elementos
+            console.log("Después de splice:", frutas);
+            mostrarPropiedadesArray();
+        }
+
+        // Mostrar las propiedades del array al cargar la página
+        mostrarPropiedadesArray();
+    </script>
+</body>
+</html>

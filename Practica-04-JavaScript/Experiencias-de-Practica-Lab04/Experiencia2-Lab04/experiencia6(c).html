@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 6(c): Uso del Objeto Number</title>
+</head>
+<body>
+    <h1>Experiencia 6(c): Uso del Objeto Number</h1>
+    <p id="resultados"></p>
+    <button onclick="usarMetodosNumber()">Usar Métodos de Number</button>
+
+    <script>
+        // Función para visualizar algunas propiedades del objeto Number
+        function mostrarPropiedadesNumber() {
+            // Propiedades estáticas del objeto Number
+            const maximo = Number.MAX_VALUE; // Valor numérico máximo
+            const minimo = Number.MIN_VALUE; // Valor numérico mínimo
+            const noEsUnNumero = Number.NaN; // Representación de NaN
+            const infinitoPositivo = Number.POSITIVE_INFINITY; // Infinito positivo
+            const infinitoNegativo = Number.NEGATIVE_INFINITY; // Infinito negativo
+
+            // Mostrar estas propiedades en la página
+            const resultados = document.getElementById('resultados');
+            resultados.innerHTML = `
+                <strong>Valor máximo de Number:</strong> ${maximo} <br>
+                <strong>Valor mínimo de Number:</strong> ${minimo} <br>
+                <strong>NaN en Number:</strong> ${noEsUnNumero} <br>
+                <strong>Infinito positivo:</strong> ${infinitoPositivo} <br>
+                <strong>Infinito negativo:</strong> ${infinitoNegativo} <br>
+            `;
+        }
+
+        // Función para usar algunos métodos del objeto Number
+        function usarMetodosNumber() {
+            const numero = 12345.6789;
+
+            // Métodos comunes de Number
+            const fijo = numero.toFixed(2); // Limita a 2 decimales
+            const precision = numero.toPrecision(4); // Precisión de 4 dígitos
+            const enString = numero.toString(); // Convierte el número a cadena
+
+            console.log(`Número original: ${numero}`);
+            console.log(`Número con toFixed(2): ${fijo}`);
+            console.log(`Número con toPrecision(4): ${precision}`);
+            console.log(`Número con toString(): ${enString}`);
+
+            // Mostrar resultados en la página
+            const resultados = document.getElementById('resultados');
+            resultados.innerHTML += `
+                <br><strong>Número original:</strong> ${numero} <br>
+                <strong>Con toFixed(2):</strong> ${fijo} <br>
+                <strong>Con toPrecision(4):</strong> ${precision} <br>
+                <strong>Convertido a String:</strong> ${enString} <br>
+            `;
+        }
+
+        // Mostrar propiedades del objeto Number al cargar la página
+        mostrarPropiedadesNumber();
+    </script>
+</body>
+</html>
