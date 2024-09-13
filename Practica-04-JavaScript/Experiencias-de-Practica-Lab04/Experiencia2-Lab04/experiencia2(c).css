@@ -1,0 +1,21 @@
+body{   /* cuerpo */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(#fff,#c8c8c8) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{ /* titulo */
+    padding: 10px;
+    text-align: center;
+    font-size: 36px;
+}
+
+p{  /* descripcion */
+    font-family: Arial, sans-serif;
+    margin: 10px;
+    padding: 10px;
+    font-size: large;
+}

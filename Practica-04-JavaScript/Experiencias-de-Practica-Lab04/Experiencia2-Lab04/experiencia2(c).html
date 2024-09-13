@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiencia 2 (c)</title>
+    <link rel="stylesheet" href="experiencia2(c).css">
+</head>
+<body>
+    <h1>Experiencia 02 (c): Uso de Consolelog y Scope</h1>
+    <p>Abre la consola del navegador para ver los resultados.</p>
+    <center>
+      <img src="https://media.idownloadblog.com/wp-content/uploads/2016/11/Animated-GIF-Banana.gif">
+    </center>
+
+    <script>
+        // Variable en el ámbito global
+        var globalVar = "Estoy en el ámbito global";
+
+        console.log(globalVar); // Muestra: Estoy en el ámbito global
+
+        // Bloque de código con let (ámbito de bloque)
+        {
+            let blockVar = "Estoy dentro de un bloque";
+            console.log(blockVar); // Muestra: Estoy dentro de un bloque
+        }
+
+        // Intentando acceder a blockVar fuera del bloque
+        try {
+            console.log(blockVar); // Error: blockVar no está definida
+        } catch (error) {
+            console.error("Error:", error.message); // Captura el error
+        }
+
+        // Función que crea un ámbito local
+        function localScope() {
+            var localVar = "Estoy dentro de una función";
+            console.log(localVar); // Muestra: Estoy dentro de una función
+        }
+
+        localScope();
+
+        // Intentando acceder a localVar fuera de la función
+        try {
+            console.log(localVar); // Error: localVar no está definida
+        } catch (error) {
+            console.error("Error:", error.message); // Captura el error
+        }
+    </script>
+</body>
+</html>
