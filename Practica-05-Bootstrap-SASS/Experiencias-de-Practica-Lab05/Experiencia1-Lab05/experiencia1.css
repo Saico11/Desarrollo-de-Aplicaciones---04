@@ -1,0 +1,30 @@
+body {  /* fondo */
+  font-family: 'Roboto', sans-serif;
+  background-color: #f7f7f7;
+}
+
+h1, h2, h3 {    /* cabeceras */
+  font-weight: 700;
+}
+
+a.nav-link {
+  font-weight: 500;
+}
+
+.btn-danger {
+  background-color: #e60000;
+  border-color: #e60000;
+}
+
+.btn-warning {
+  background-color: #ffcc00;
+  border-color: #ffcc00;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+footer p {
+  margin: 0;
+}
