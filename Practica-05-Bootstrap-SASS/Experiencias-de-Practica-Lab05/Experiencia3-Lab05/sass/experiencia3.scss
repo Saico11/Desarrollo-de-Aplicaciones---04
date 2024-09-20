@@ -1,0 +1,52 @@
+// 1. VARIABLES
+$primary-color: #2c3e50; // Azul oscuro
+$secondary-color: #18bc9c; // Verde menta
+$hover-color: darken($secondary-color, 10%);
+$font-stack: 'Roboto', sans-serif;
+$transition-speed: 0.3s;
+
+// 2. ESTILOS GLOBALES
+body {
+  font-family: $font-stack;
+  background-color: #ecf0f1;
+  color: #2c3e50;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+// 3. NAVBAR PERSONALIZADO
+.navbar-custom {
+  background-color: $primary-color;
+  .navbar-brand, .nav-link {
+    color: white;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  .dropdown-menu {
+    background-color: $secondary-color;
+    .dropdown-item {
+      color: white;
+      padding: 10px 20px;
+      &:hover {
+        background-color: $hover-color;
+      }
+    }
+  }
+}
+
+// 4. ANIMACIONES Y TRANSICIONES
+.navbar-custom .dropdown-menu {
+  display: none;
+  opacity: 0;
+  transition: opacity $transition-speed ease-in-out;
+
+  &.show {
+    display: block;
+    opacity: 1;
+  }
+}
+
