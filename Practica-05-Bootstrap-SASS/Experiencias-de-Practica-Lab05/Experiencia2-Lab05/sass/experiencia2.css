@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background-color: #f4f4f4; /* Fondo claro */
+  padding: 1.5rem;
+}
+
+.main-header {
+  background-color: #0072bc;
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+.main-header h1 {
+  font-size: 2.25rem;
+  margin-bottom: 0.625rem;
+}
+
+.main-nav {
+  background-color: #f9d616;
+  padding: 0.625rem;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.main-nav ul li {
+  margin: 0 15px;
+}
+.main-nav ul li a {
+  text-decoration: none;
+  color: #0072bc;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+.content .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+.content h2 {
+  font-size: 2rem;
+  color: #0072bc;
+  margin-bottom: 1.25rem;
+}
+.content p {
+  font-size: 1.125rem;
+  color: #333;
+  margin-bottom: 1.875rem;
+}
+.content .btn {
+  background-color: #f9d616;
+  color: #0072bc;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+.content .btn:hover {
+  background-color: #d6b606;
+}
+
+.main-footer {
+  background-color: #0072bc;
+  color: white;
+  text-align: center;
+  padding: 1.25rem;
+}
+.main-footer p {
+  font-size: 1rem;
+}/*# sourceMappingURL=experiencia2.css.map */

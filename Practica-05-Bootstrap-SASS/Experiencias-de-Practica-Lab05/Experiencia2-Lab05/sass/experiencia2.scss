@@ -1,0 +1,116 @@
+// 1. VARIABLES
+$primary-color: #0072bc; // Azul Donofrio
+$secondary-color: #f9d616; // Amarillo Donofrio
+$font-stack: 'Roboto', sans-serif;
+$border-radius: 8px;
+$padding: 1.5rem;
+
+// 2. MIXINS
+@mixin border-radius($radius) {
+  border-radius: $radius;
+}
+
+@mixin button-styles($bg-color, $text-color) {
+  background-color: $bg-color;
+  color: $text-color;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  @include border-radius($border-radius);
+  transition: background-color 0.3s ease;
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
+
+// 3. FUNCIONES
+@function calculate-rem($pixels) {
+  @return $pixels / 16 * 1rem;
+}
+
+// 4. ESTILOS GLOBALES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: calculate-rem(16);
+  background-color: #f4f4f4; /* Fondo claro */
+  padding: $padding;
+}
+
+// 5. ANIDAMIENTO
+.main-header {
+  background-color: $primary-color;
+  color: white;
+  padding: $padding;
+  text-align: center;
+
+  h1 {
+    font-size: calculate-rem(36);
+    margin-bottom: calculate-rem(10);
+  }
+}
+
+.main-nav {
+  background-color: $secondary-color;
+  padding: calculate-rem(10);
+
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: calculate-rem(18);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+.content {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: $padding;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: calculate-rem(32);
+    color: $primary-color;
+    margin-bottom: calculate-rem(20);
+  }
+
+  p {
+    font-size: calculate-rem(18);
+    color: #333;
+    margin-bottom: calculate-rem(30);
+  }
+
+  .btn {
+    @include button-styles($secondary-color, $primary-color);
+  }
+}
+
+.main-footer {
+  background-color: $primary-color;
+  color: white;
+  text-align: center;
+  padding: calculate-rem(20);
+
+  p {
+    font-size: calculate-rem(16);
+  }
+}
