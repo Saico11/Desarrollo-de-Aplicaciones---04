@@ -1,0 +1,120 @@
+// VARIABLES
+$primary-color: #3498db; // Azul primario
+$secondary-color: #2ecc71; // Verde secundario
+$dark-color: #2c3e50; // Color oscuro
+$light-color: #ecf0f1; // Color claro
+$font-main: 'Arial', sans-serif;
+$font-heading: 'Helvetica', sans-serif;
+$border-radius: 8px;
+$transition-speed: 0.3s;
+$spacing-unit: 1rem;
+
+// MIXINS
+@mixin box-shadow($size, $color) {
+  box-shadow: 0 0 $size rgba($color, 0.3);
+}
+
+@mixin rounded-corners($radius: $border-radius) {
+  border-radius: $radius;
+}
+
+@mixin transition($property, $duration: $transition-speed) {
+  transition: $property $duration ease-in-out;
+}
+
+// FUNCIONES
+@function darken-color($color, $percentage) {
+  @return darken($color, $percentage);
+}
+
+@function lighten-color($color, $percentage) {
+  @return lighten($color, $percentage);
+}
+
+// ESTILOS GLOBALES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $light-color;
+  color: $dark-color;
+  padding: $spacing-unit;
+}
+
+// ESTILOS DEL ENCABEZADO
+.header {
+  background-color: $primary-color;
+  color: white;
+  padding: $spacing-unit * 2;
+  text-align: center;
+
+  h1 {
+    font-family: $font-heading;
+    margin-bottom: $spacing-unit;
+    @include transition(color);
+  }
+
+  p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
+
+// SECCIÓN DE CARACTERÍSTICAS
+.features {
+  background-color: lighten-color($primary-color, 20%);
+  padding: $spacing-unit * 2;
+
+  h2 {
+    text-align: center;
+    margin-bottom: $spacing-unit * 2;
+    color: $dark-color;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .col {
+    flex: 1;
+    margin: 0 $spacing-unit;
+  }
+
+  .card {
+    background-color: white;
+    padding: $spacing-unit;
+    @include rounded-corners();
+    @include box-shadow(10px, $dark-color);
+    @include transition(transform, $transition-speed);
+
+    &:hover {
+      transform: scale(1.05);
+    }
+
+    h3 {
+      color: $primary-color;
+      margin-bottom: $spacing-unit / 2;
+    }
+
+    p {
+      color: $dark-color;
+    }
+  }
+}
+
+// PIE DE PÁGINA
+.footer {
+  background-color: $dark-color;
+  color: $light-color;
+  text-align: center;
+  padding: $spacing-unit * 2;
+
+  p {
+    font-size: 0.9rem;
+  }
+}
