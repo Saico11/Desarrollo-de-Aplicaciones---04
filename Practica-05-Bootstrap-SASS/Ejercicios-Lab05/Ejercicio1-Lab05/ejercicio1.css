@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 4, 40, 0.8)), url('https://steamuserimages-a.akamaihd.net/ugc/270598716228579115/72CD26E14B7FCBA028206A06F10548C0D5174CFC/') center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 4, 40, 0.8)), url('https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-05-Bootstrap-SASS/Ejercicios-Lab05/Ejercicio1-Lab05/wave.jpg?raw=true') center/cover no-repeat;
   height: 100vh;
 }
 
