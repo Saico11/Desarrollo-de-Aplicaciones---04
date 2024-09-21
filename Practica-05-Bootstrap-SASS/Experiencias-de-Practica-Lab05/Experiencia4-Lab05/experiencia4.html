@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia 4: Diseño de una landing page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sass/experiencia4.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header-hero text-center text-white d-flex justify-content-center align-items-center">
+    <div class="container">
+      <!-- <h1 class="display-4">Metallica</h1> -->
+      <img src="https://www.metallica.com/on/demandware.static/-/Sites/default/dw83d2c4ce/images/logos/logo-homepage.svg">
+      <p class="lead">El tour regresa a Norteamérica</p>
+      <a href="#features" class="btn btn-danger btn-lg mt-3">Compra tus tickets</a>
+    </div>
+  </header>
+
+  <!-- Sección de Características -->
+  <section id="features" class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-5">Discografia</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <i class="fas fa-guitar fa-3x mb-3"></i>
+          <img src="https://cdn.media.amplience.net/i/metallica/ride-the-lightning_cover" alt="ridethelightning" width="100%">
+          <h3>Ride the Lightning</h3>
+          <p>Released July 27, 1984</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-drum fa-3x mb-3"></i>
+          <img src="https://cdn.media.amplience.net/i/metallica/master-of-puppets_cover" alt="masterofpuppets" width="100%">
+          <h3>Master of Puppets</h3>
+          <p>Released March 3, 1986</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fas fa-microphone-alt fa-3x mb-3"></i>
+          <img src="https://cdn.media.amplience.net/i/metallica/and-justice-for-all_cover" alt="andjustice" width="100%">
+          <h3>...And Justice for All</h3>
+          <p>Released September 7, 1988</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Tours -->
+  <section id="testimonials" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Tour Mundial</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <h3 class="mb-0">CIUDAD DE MÉXICO, MÉXICO</h3>
+            <p class="mb-0">20 de Septiembre, 2024</p>
+          </blockquote>
+        </div>
+        <div class="col-md-6">
+          <blockquote class="blockquote text-center">
+            <h3 class="mb-0">LOS ÁNGELES, CALIFORNIA, EE.UU.</h3>
+            <p class="mb-0">13 de Diciembre, 2024</p>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Formulario de Contacto -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Únete a Nuestro Club de Fans</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-warning btn-block">Únete Ahora</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer py-3 text-secondary text-center">
+    <p>&copy; Metallica</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="experiencia4.js"></script>
+</body>
+</html>

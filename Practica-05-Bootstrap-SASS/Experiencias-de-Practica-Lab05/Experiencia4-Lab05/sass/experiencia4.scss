@@ -1,0 +1,113 @@
+// Variables
+$primary-color: #000000;
+$secondary-color: #e6bb39;
+$accent-color: #f8f9fa;
+$dark-bg-color: #1c1c1c;
+$font-main: 'Montserrat', sans-serif;
+$font-heading: 'futura-pt-bold', sans-serif;
+$box-shadow-color: rgba(230, 195, 57, 0.5);
+
+// Global Styles
+body {
+  font-family: $font-main;
+  background: url("https://www.metallica.com/on/demandware.static/Sites-Metallica-Site/-/default/v1726865423802/images/bg-textured-white.png") center/cover no-repeat !important;
+  color: #151515 !important;
+  padding-top: 70px !important;
+}
+
+h1, h2 {
+  font-weight: bold;
+  font: 700 32px / 1.13 $font-heading !important;
+  color: $primary-color;
+  text-transform: uppercase;
+  font-size: 36px !important;
+}
+
+p, .lead {
+  color: $accent-color;
+}
+
+// Header (Hero)
+.header-hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://cdn.media.amplience.net/i/metallica/M72-2025_carousel?fmt=auto&w=auto") center/cover no-repeat;
+  height: 100vh;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  h1 {
+    font-size: 5rem;
+    letter-spacing: 2px;
+  }
+
+  .btn {
+    background-color: $secondary-color;
+    border: none;
+    padding: 15px 30px;
+    box-shadow: 0 0 15px $box-shadow-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+}
+
+// Section Styles
+section {
+  padding: 60px 0;
+}
+
+#features {
+  h3 {
+    color: #2f2f2f;
+  }
+
+  i {
+    color: $accent-color;
+    margin-bottom: 20px;
+  }
+
+  p {
+    color: $primary-color;
+  }
+}
+
+// Discography Section
+#testimonials {
+  background: url("https://www.metallica.com/on/demandware.static/-/Sites/default/dw5052c766/images/tour-date-card-bg.jpg");
+
+  blockquote {
+    background-color: $dark-bg-color;
+    padding: 20px;
+    border-left: 5px solid $secondary-color;
+    box-shadow: 0 0 20px $box-shadow-color;
+
+    p {
+      font-size: 1.1rem;
+      color: $accent-color;
+    }
+  }
+
+  .text-center {
+    color: $accent-color !important;
+  }
+}
+
+// Contact Form Styles
+#contact .form-control {
+  background-color: $dark-bg-color;
+  border: 1px solid darken($secondary-color, 10%);
+  color: $accent-color;
+}
+
+// Footer Styles
+footer {
+  background-color: $primary-color;
+  color: #5e5e5e;
+  font-size: 12px;
+
+  p {
+    margin: 0;
+  }
+}
