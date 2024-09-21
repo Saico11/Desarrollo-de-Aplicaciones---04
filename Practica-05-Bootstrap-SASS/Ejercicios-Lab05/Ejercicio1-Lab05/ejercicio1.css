@@ -1,6 +1,6 @@
+/* fondo chevere */
 body {
   font-family: "Pacifico", cursive !important;
-  
   background: linear-gradient(to right, #000428, #004e92) no-repeat center center fixed;
   background-size: cover;
   color: #f8f9fa;
@@ -15,12 +15,26 @@ body {
   font-size: 5rem;
   letter-spacing: 4px;
   color: #ffffff;
-  text-shadow: #ff2d96 5px 0 10px;
+  text-shadow:
+  0 0 7px #fff,
+  0 0 10px #fff,
+  0 0 21px #ff2d96,
+  0 0 42px #ff2d96,
+  0 0 82px #ff2d96,
+  0 0 92px #ff2d96,
+  0 0 102px #ff2d96,
+  0 0 151px #ff2d96;
+  font-style: italic;
 }
 
 .header p {
   font-size: 1.5rem;
   color: #00c6ff;
+    text-shadow:
+  0 0 7px #00c8ff80,
+  0 0 10px #00c8ff80,
+  0 0 21px #00c8ff80,
+  0 0 42px #00c8ff80;
 }
 
 .header .btn {
@@ -37,12 +51,19 @@ body {
 
 /* Sección Acerca de mí */
 #about {
-  background-color: #000320;
+  background: #000320;
   padding: 60px 0;
 }
 
-#about h2 {
-  color: #ff007f;
+#about h2, h3 {
+  color: #ffffff;
+  text-shadow:
+  0 0 7px #ff2d96,
+  0 0 10px #ff2d96,
+  0 0 21px #ff2d96,
+  0 0 42px #ff2d96;
+  font-style: italic;
+  padding: 10px;
 }
 
 #about img {
@@ -57,6 +78,11 @@ body {
 
 #about .list-inline-item {
   color: #00c6ff;
+    text-shadow:
+  0 0 7px #00c8ff80,
+  0 0 10px #00c8ff80,
+  0 0 21px #00c8ff80,
+  0 0 42px #00c8ff80;
   font-weight: bold;
 }
 
@@ -66,13 +92,20 @@ body {
 }
 
 #portfolio h2 {
-  color: #ff007f;
+  color: #ffffff;
+  text-shadow:
+  0 0 7px #ff2d96,
+  0 0 10px #ff2d96,
+  0 0 21px #ff2d96,
+  0 0 42px #ff2d96;
+  font-style: italic;
+  padding-bottom: 10px;
 }
 
 #portfolio .card {
   background-color: #000000 !important;
   border: 3px solid #ffc1e0;
-  box-shadow: 2px 2px 14px 2px #ff007f;
+  box-shadow: 2px 2px 22px 2px #ff007f;
   transition: transform 0.3s ease;
 }
 
@@ -82,6 +115,11 @@ body {
 
 #portfolio .card-title {
   color: #00c6ff;
+    text-shadow:
+  0 0 7px #00c8ff80,
+  0 0 10px #00c8ff80,
+  0 0 21px #00c8ff80,
+  0 0 42px #00c8ff80;
 }
 
 #portfolio .card .btn {
@@ -100,7 +138,13 @@ body {
 }
 
 #contact h2 {
-  color: #ff007f;
+  color: #ffffff;
+  text-shadow:
+  0 0 7px #ff2d96,
+  0 0 10px #ff2d96,
+  0 0 21px #ff2d96,
+  0 0 42px #ff2d96;
+  font-style: italic;
 }
 
 #contact .form-control {
@@ -111,12 +155,12 @@ body {
 
 #contact .form-control:focus {
   background-color: #292959;
-  box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+  box-shadow: 0 0 10px rgba(255, 163, 209, 0.9);
   border: none;
 }
 
 /* Pie de página */
 footer {
-  background-color: #0b0c38;
+  background-color: #000000;
   color: #f8f9fa;
 }
