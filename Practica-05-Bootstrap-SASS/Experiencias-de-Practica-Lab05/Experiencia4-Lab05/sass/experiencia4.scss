@@ -10,7 +10,7 @@ $box-shadow-color: rgba(230, 195, 57, 0.5);
 // Global Styles
 body {
   font-family: $font-main;
-  background: url("https://www.metallica.com/on/demandware.static/Sites-Metallica-Site/-/default/v1726865423802/images/bg-textured-white.png") center/cover no-repeat !important;
+  background: url("https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-05-Bootstrap-SASS/Experiencias-de-Practica-Lab05/Experiencia4-Lab05/metallica-background.png?raw=true") center/cover no-repeat !important;
   color: #151515 !important;
   padding-top: 70px !important;
 }
@@ -29,7 +29,7 @@ p, .lead {
 
 // Header (Hero)
 .header-hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://cdn.media.amplience.net/i/metallica/M72-2025_carousel?fmt=auto&w=auto") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url("https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-05-Bootstrap-SASS/Experiencias-de-Practica-Lab05/Experiencia4-Lab05/metallica-wallpaper.jpg?raw=true") center/cover no-repeat;
   height: 100vh;
   text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.7);
   display: flex;
@@ -75,7 +75,7 @@ section {
 
 // Discography Section
 #testimonials {
-  background: url("https://www.metallica.com/on/demandware.static/-/Sites/default/dw5052c766/images/tour-date-card-bg.jpg");
+  background: url("https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-05-Bootstrap-SASS/Experiencias-de-Practica-Lab05/Experiencia4-Lab05/metallica-tour-card.jpg?raw=true");
 
   blockquote {
     background-color: $dark-bg-color;
