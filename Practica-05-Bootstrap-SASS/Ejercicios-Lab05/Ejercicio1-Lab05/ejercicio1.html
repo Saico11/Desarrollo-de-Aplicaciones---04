@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 1: Portafolio Personal</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="ejercicio1.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="header text-white text-center d-flex justify-content-center align-items-center">
+    <div class="container">
+      <h1 class="display-4">Bienvenido al Portafolio</h1>
+      <p class="lead">No se que texto ponerle.</p>
+    </div>
+  </header>
+
+  <!-- Sección Acerca de mí -->
+  <section id="about" class="py-5 text-white">
+    <div class="container text-center">
+      <h2>Acerca de mí</h2>
+      <img src="https://via.placeholder.com/150" alt="Foto de perfil" class="rounded-circle my-4">
+      <p class="lead">Soy estudiante de la UCSM.</p>
+      
+      <!-- Lista de habilidades -->
+      <h3 class="mt-4">Habilidades</h3>
+      <ul class="list-inline">
+        <li class="list-inline-item">HTML</li>
+        <li class="list-inline-item">CSS</li>
+        <li class="list-inline-item">JavaScript</li>
+        <li class="list-inline-item">Bootstrap</li>
+        <li class="list-inline-item">Sass</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Sección de Portafolio -->
+  <section id="portfolio" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center">Portafolio</h2>
+      <div class="row">
+        <!-- Proyecto 1 -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Lorem ipsum bla bla bla</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 2 -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 2">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 2</h5>
+              <p class="card-text">Lorem ipsum bla bla bla</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <!-- Proyecto 3 -->
+        <div class="col-md-4 mb-4">
+          <div class="card bg-dark text-white">
+            <img src="https://via.placeholder.com/400x300" class="card-img-top" alt="Proyecto 3">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 3</h5>
+              <p class="card-text">Lorem ipsum bla bla bla</p>
+              <a href="#" class="btn btn-primary">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Contacto -->
+  <section id="contact" class="py-5 text-white">
+    <div class="container">
+      <h2 class="text-center mb-5">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="form-group">
+              <label for="name">Nombre</label>
+              <input type="text" class="form-control" id="name" placeholder="Tu nombre">
+            </div>
+            <div class="form-group">
+              <label for="email">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo">
+            </div>
+            <div class="form-group">
+              <label for="message">Mensaje</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Tu mensaje"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Enviar Mensaje</button>
+          </form>
+          <!-- Enlaces a redes sociales -->
+          <div class="text-center mt-4">
+            <a href="#" class="text-light mx-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="text-light mx-2"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="footer py-4 bg-dark text-center text-light">
+    <p>&copy; 2024 Portafolio de Christian Romero</p>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- FontAwesome (para íconos de redes sociales) -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</body>
+</html>

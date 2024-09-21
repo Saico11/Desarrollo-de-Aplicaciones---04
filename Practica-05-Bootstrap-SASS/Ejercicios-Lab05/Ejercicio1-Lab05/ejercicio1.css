@@ -1,0 +1,122 @@
+body {
+  font-family: "Pacifico", cursive !important;
+  
+  background: linear-gradient(to right, #000428, #004e92) no-repeat center center fixed;
+  background-size: cover;
+  color: #f8f9fa;
+}
+
+.header {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 4, 40, 0.8)), url('https://steamuserimages-a.akamaihd.net/ugc/270598716228579115/72CD26E14B7FCBA028206A06F10548C0D5174CFC/') center/cover no-repeat;
+  height: 100vh;
+}
+
+.header h1 {
+  font-size: 5rem;
+  letter-spacing: 4px;
+  color: #ffffff;
+  text-shadow: #ff2d96 5px 0 10px;
+}
+
+.header p {
+  font-size: 1.5rem;
+  color: #00c6ff;
+}
+
+.header .btn {
+  background-color: #ff007f;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+}
+
+.header .btn:hover {
+  background-color: #ff61a6;
+}
+
+/* Sección Acerca de mí */
+#about {
+  background-color: #000320;
+  padding: 60px 0;
+}
+
+#about h2 {
+  color: #ff007f;
+}
+
+#about img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#about p {
+  font-size: 1.2rem;
+}
+
+#about .list-inline-item {
+  color: #00c6ff;
+  font-weight: bold;
+}
+
+/* Sección de Portafolio */
+#portfolio {
+  background-color: #000428 !important;
+}
+
+#portfolio h2 {
+  color: #ff007f;
+}
+
+#portfolio .card {
+  background-color: #000000 !important;
+  border: 3px solid #ffc1e0;
+  box-shadow: 2px 2px 14px 2px #ff007f;
+  transition: transform 0.3s ease;
+}
+
+#portfolio .card:hover {
+  transform: scale(1.05);
+}
+
+#portfolio .card-title {
+  color: #00c6ff;
+}
+
+#portfolio .card .btn {
+  background-color: #ff007f;
+  border: none;
+}
+
+#portfolio .card .btn:hover {
+  background-color: #ff61a6;
+  box-shadow: 0 0 11px #ffc1e0;
+}
+
+/* Sección de Contacto */
+#contact {
+  background-color: #000428;
+}
+
+#contact h2 {
+  color: #ff007f;
+}
+
+#contact .form-control {
+  background-color: #1b1b44;
+  border: none;
+  color: #f8f9fa;
+}
+
+#contact .form-control:focus {
+  background-color: #292959;
+  box-shadow: 0 0 10px rgba(255, 0, 127, 0.5);
+  border: none;
+}
+
+/* Pie de página */
+footer {
+  background-color: #0b0c38;
+  color: #f8f9fa;
+}
