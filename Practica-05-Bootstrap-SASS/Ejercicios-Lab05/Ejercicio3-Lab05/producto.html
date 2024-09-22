@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3: Tienda Online (Producto)</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sass/ejercicio3.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="inicio.html">
+      <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/bltc5fc9f84bbfc73f7/64feca63e60bfc93e1d3db9f/tottus.svg" alt="Tottus Logo" width="120">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="inicio.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categorías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="producto.html">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart"></i><img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/bltf299bafe179bfa98/6213f32c910a6c613c730718/hr-4-cart-desktop.svg"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Página de Producto estilo Tottus -->
+  <div class="container py-5">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/tottusPE/41057709_1/w=1500,h=1500,fit=pad" alt="Producto" class="img-fluid">
+      </div>
+      <div class="col-md-6">
+        <h1>Tripack Gaseosa Coca Cola + Inca Kola + Fanta 3 L</h1>
+        <p>TRIPACK CC/IK/FTA 3 LT CON GANCHO</p>
+        <img src="https://tottus.falabella.com.pe/a/fa/product/static/styles/svg/cmrIcon.svg">
+        <p class="price text-danger font-weight-normal">S/25.90</p>
+        
+        <p class="price text-secondary">S/26.50</p>
+        
+        <!-- Formulario de cantidad con botón para agregar al carrito -->
+        <form id="product-form">
+          <div class="form-group">
+              <div class="alert-max-units text-secondary font-weight-light">
+                <p>Máximo 24 unidades</p>
+              </div>
+            <div class="input-group">
+              
+              <div class="input-group-prepend">
+                <button type="button" class="btn btn-outline-secondary" id="decrease">-</button>
+              </div>
+              <input type="number" class="form-control text-center" id="quantity" value="1" min="1" max="24" readonly>
+              <div class="input-group-append">
+                <button type="button" class="btn btn-outline-secondary" id="increase">+</button>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-success btn-block">Agregar al carrito</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer bg-light text-center py-4">
+    <p>&copy; TODOS LOS DERECHOS RESERVADOS</p>
+    <p>Falabella.com S.A.C. Av. Paseo de la República 3220, San Isidro, Perú</p>
+  </footer>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Script para contador de unidades -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const decreaseBtn = document.getElementById('decrease');
+      const increaseBtn = document.getElementById('increase');
+      const quantityInput = document.getElementById('quantity');
+
+      // Actualizar la cantidad
+      const updateQuantity = (amount) => {
+        let currentValue = parseInt(quantityInput.value);
+        let newValue = currentValue + amount;
+        if (newValue >= 1 && newValue <= 24) {
+          quantityInput.value = newValue;
+        }
+      };
+
+      // aumentar y disminuir cantidad
+      decreaseBtn.addEventListener('click', () => updateQuantity(-1));
+      increaseBtn.addEventListener('click', () => updateQuantity(1));
+    });
+  </script>
+</body>
+</html>

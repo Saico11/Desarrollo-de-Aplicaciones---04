@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio 3: Tienda Online (Inicio)</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="sass/ejercicio3.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="inicio.html">
+      <img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/bltc5fc9f84bbfc73f7/64feca63e60bfc93e1d3db9f/tottus.svg" alt="Tottus Logo" width="120">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="inicio.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Categorías</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="producto.html">Ofertas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="carrito.html"><i class="fas fa-shopping-cart"></i><img src="https://images.falabella.com/v3/assets/bltf4ed0b9a176c126e/bltf299bafe179bfa98/6213f32c910a6c613c730718/hr-4-cart-desktop.svg"></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Carrusel de productos destacados -->
+  <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://images.falabella.com/v3/assets/blt422ac29cebae1d64/blta94788b36a5d740e/66edab79f95822a7dca73377/SXH_BIG-BANNERS-WEB-2.png?disable=upscale&auto=webp&quality=70&width=1920" class="d-block w-100 h-100" alt="Producto 1">
+        <!--
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Producto Destacado 1</h5>
+          <p>Descripción del producto.</p>
+        </div>
+        -->
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.falabella.com/v3/assets/blt422ac29cebae1d64/blt1c181d482c88ceb4/66eb6a69df462b524dd6ae7d/BIG-BANNERS-WEB-3.png?disable=upscale&auto=webp&quality=70&width=1920" class="d-block w-100 h-100" alt="Producto 2">
+        <!--
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Producto Destacado 2</h5>
+          <p>Descripción del producto.</p>
+        </div>
+        -->
+      </div>
+      <div class="carousel-item">
+        <img src="https://images.falabella.com/v3/assets/blt422ac29cebae1d64/blta4df6c7952ff8d37/66eb6a69f958224b91a71c3a/BIG-BANNERS-WEB-1.png?disable=upscale&auto=webp&quality=70&width=1920" class="d-block w-100 h-100" alt="Producto 3">
+        <!--
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Producto Destacado 3</h5>
+          <p>Descripción del producto.</p>
+        </div>
+        -->
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Siguiente</span>
+    </a>
+  </section>
+
+  <!-- Secciones de categorías -->
+  <section class="categories py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">Categorías Populares</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.falabella.com/v3/assets/blt422ac29cebae1d64/blt095e719cfadf61ec/65243c125eded696647c6399/ICONO_7.png" class="card-img-top h-100" alt="Categoría 1">
+            <div class="card-body text-center">
+              <h5 class="card-title">Línea blanca</h5>
+              <a href="#" class="btn btn-success">Explorar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.falabella.com/v3/assets/blt422ac29cebae1d64/bltb2fd6c319924a745/65121a16b258100465803838/Azu%E2%95%A0%C3%BCcar_y_endulzantes.png?auto=webp&quality=70&width=80p" class="card-img-top h-100" alt="Categoría 2">
+            <div class="card-body text-center">
+              <h5 class="card-title">Abarrotes</h5>
+              <a href="#" class="btn btn-success">Explorar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://images.falabella.com/v3/assets/blt422ac29cebae1d64/blt172e161264e4e4b9/65121b85549cbd65dfb9d92f/Detergentes.png" class="card-img-top h-100" alt="Categoría 3">
+            <div class="card-body text-center">
+              <h5 class="card-title">Limpieza</h5>
+              <a href="#" class="btn btn-success">Explorar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer bg-light text-center py-4">
+    <p>&copy; TODOS LOS DERECHOS RESERVADOS</p>
+    <p>Falabella.com S.A.C. Av. Paseo de la República 3220, San Isidro, Perú</p>
+  </footer>
+
+  <!-- Bootstrap JS y dependencias -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

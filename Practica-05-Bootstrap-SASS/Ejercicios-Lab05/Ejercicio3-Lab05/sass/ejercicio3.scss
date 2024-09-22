@@ -1,0 +1,225 @@
+// VARIABLES
+$primary-color: #68b92a;
+$secondary-color: #ffffff;
+$dark-color: #333333;
+$light-gray: #f8f9fa;
+$border-color: #e1e1e1;
+$alert-danger-color: #ff4c4c;
+$alert-danger-hover: #ff1919;
+$font-family-main: "Roboto", sans-serif;
+
+// MIXINS
+@mixin rounded-corners($radius: 8px) {
+  border-radius: $radius;
+}
+
+@mixin transition($property, $duration: 0.3s) {
+  transition: $property $duration ease-in-out;
+}
+
+// RESET Y ESTILOS GLOBALES
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-main;
+  background-color: $light-gray;
+  color: $dark-color;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5 {
+  color: $dark-color;
+  margin-bottom: 1rem;
+}
+
+// NAVEGACIÓN
+.navbar {
+  background: linear-gradient(#9de144, $primary-color);
+  border-bottom: 2px solid $primary-color;
+
+  .navbar-brand img {
+    width: 120px;
+  }
+
+  .nav-link {
+    color: $secondary-color !important;
+    margin-right: 1rem;
+    font-weight: bold;
+
+    &:hover {
+      color: $primary-color;
+    }
+  }
+
+  .fas {
+    color: $primary-color;
+  }
+}
+
+// CARRUSEL
+.carousel-item {
+  height: auto;
+  background-color: $primary-color;
+  color: $secondary-color;
+  @include transition(transform, 0.5s);
+
+  img {
+    object-fit: cover;
+    height: 500px;
+  }
+
+  .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    @include rounded-corners(10px);
+
+    h5 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// TARJETAS DE PRODUCTO
+.card {
+  background-color: $secondary-color;
+  border: 1px solid $border-color;
+  padding: 1.5rem;
+  text-align: center;
+  @include rounded-corners(10px);
+  @include transition(transform);
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    @include rounded-corners(8px);
+  }
+
+  .card-title {
+    color: $dark-color;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    background-color: $primary-color;
+    border: none;
+    color: $secondary-color;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    @include transition(background-color);
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}
+
+// PRECIO
+.price {
+  color: $primary-color;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+// FORMULARIO DE CANTIDAD
+form {
+  .input-group {
+    width: 120px;
+    margin: 1rem 0;
+
+    .form-control {
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: 1px solid $border-color;
+      @include rounded-corners(4px);
+    }
+
+    .btn {
+      background-color: $primary-color;
+      border: none;
+      color: $secondary-color;
+      font-size: 1.2rem;
+
+      &:hover {
+        background-color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+  .alert-max-units {
+    margin-top: 1rem !important;
+  }
+
+  .btn {
+    @include rounded-corners(18px);
+  }
+}
+
+// TABLA DE CARRITO DE COMPRAS
+.table {
+  background-color: $secondary-color;
+  border: 1px solid $border-color;
+
+  th, td {
+    padding: 1rem;
+    vertical-align: middle;
+  }
+
+  th {
+    background-color: $light-gray;
+    border-bottom: 2px solid $border-color;
+    text-align: center;
+  }
+
+  td {
+    text-align: center;
+
+    input[type="number"] {
+      width: 70px;
+      text-align: center;
+    }
+
+    .btn {
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .btn-danger {
+    background-color: $alert-danger-color;
+    border: none;
+
+    &:hover {
+      background-color: $alert-danger-hover;
+    }
+  }
+}
+
+// PIE DE PÁGINA
+.footer {
+  background-color: $secondary-color;
+  color: $dark-color;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 2px solid $primary-color;
+
+  p {
+    margin-bottom: 0;
+  }
+}
