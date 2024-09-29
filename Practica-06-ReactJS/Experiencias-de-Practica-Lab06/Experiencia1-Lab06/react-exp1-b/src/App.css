@@ -1,0 +1,40 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(#475747, #7abb7a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.app-container {
+  text-align: center;
+  background: linear-gradient(#ffffffee, #a6fcff91);
+  padding: 20px;
+  border-radius: 50px;
+  border: 2px solid rgba(133, 210, 233, 0.6);
+  box-shadow: 0 4px 8px rgba(25, 35, 36, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+}
+
+button {
+  background: linear-gradient(to bottom, #3790ee, #055dbb 50%, #0056b3 50%, #013266);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: linear-gradient(to bottom, #2c75c4, #0551a1 50%, #00448d 50%, #012347);
+}
