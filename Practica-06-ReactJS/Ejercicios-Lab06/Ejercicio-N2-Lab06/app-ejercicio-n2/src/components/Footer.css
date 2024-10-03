@@ -1,0 +1,13 @@
+/* src/components/Footer.css */
+.App-footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+  }
+  
+  .App-footer p {
+    margin: 0;
+  }
+  

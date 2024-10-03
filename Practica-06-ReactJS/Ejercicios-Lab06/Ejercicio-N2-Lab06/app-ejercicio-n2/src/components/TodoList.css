@@ -1,0 +1,52 @@
+/* src/components/TodoList.css */
+.todo-list {
+  text-align: center;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.todo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.todo-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #555;
+}
+
+button {
+  background-color: #f44336;
+  color: white;
+  padding: 8px 12px;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
+.add-task-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 18px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-btn:hover {
+  background-color: #45a049;
+}
