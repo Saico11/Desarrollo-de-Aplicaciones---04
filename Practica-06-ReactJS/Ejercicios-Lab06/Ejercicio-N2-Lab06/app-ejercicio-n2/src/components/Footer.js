@@ -1,4 +1,4 @@
-// src/components/Footer.js
+// El pie de pagina para la app
 import React from 'react';
 import './Footer.css';
 
