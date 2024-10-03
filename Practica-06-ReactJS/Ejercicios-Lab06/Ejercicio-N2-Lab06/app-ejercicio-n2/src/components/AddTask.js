@@ -1,4 +1,4 @@
-// src/components/AddTask.js
+// pestaña para añadir tarea
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './AddTask.css';
@@ -29,15 +29,15 @@ function AddTask({ addTodo }) {
 
   return (
     <div>
-      <h2>Add New Task</h2>
+      <h2>Añadir una nueva tarea</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          placeholder="Enter task name"
+          placeholder="Ingrese el nombre de la tarea"
         />
-        <button type="submit">Add Task</button>
+        <button type="submit">Añadir tarea</button>
       </form>
     </div>
   );
