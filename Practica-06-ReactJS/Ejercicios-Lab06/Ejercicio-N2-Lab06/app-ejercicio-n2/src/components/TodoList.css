@@ -7,11 +7,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: white;
-  margin: 10px 0;
+  background-color: rgba(255, 255, 255, 0.671);
+  margin: 10px auto;
   padding: 15px;
   border-radius: 10px;
   box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Cambia este valor según tus necesidades */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 

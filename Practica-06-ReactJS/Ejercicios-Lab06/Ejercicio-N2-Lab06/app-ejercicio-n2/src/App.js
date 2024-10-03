@@ -30,7 +30,7 @@ function App() {
           <Route path="/add-task" element={<AddTask addTodo={addTodo} />} />  {/* Pasamos `addTodo` */}
           <Route path="/" element={<h1>Welcome to the Todo App</h1>} />
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </Router>
   );
