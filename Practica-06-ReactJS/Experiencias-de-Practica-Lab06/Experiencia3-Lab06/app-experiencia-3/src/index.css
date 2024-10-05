@@ -1,5 +1,7 @@
 body {
   font-family: Arial, sans-serif;
+  background: url("https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-06-ReactJS/Experiencias-de-Practica-Lab06/Experiencia3-Lab06/app-experiencia-3/src/background_y2k.png?raw=true") center no-repeat fixed;
+  background-size: cover;
 }
 
 button {
