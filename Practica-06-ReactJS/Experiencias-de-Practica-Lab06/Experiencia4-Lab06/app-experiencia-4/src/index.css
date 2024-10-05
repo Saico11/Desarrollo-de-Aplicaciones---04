@@ -1,0 +1,34 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-06-ReactJS/Experiencias-de-Practica-Lab06/Experiencia3-Lab06/app-experiencia-3/src/background_y2k.png?raw=true") center no-repeat fixed;
+  background-size: cover;
+}
+
+h2{
+  color: #2f4153;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 45px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 2px #2f4153;
+}
+
+button {
+  box-shadow: -2px -2px 3px inset rgba(79, 115, 150, 0.25), 1px 2px 3px inset rgba(79, 115, 150, 0.5), 0 0 3px black;
+  background: linear-gradient(#a4a7a8 10%, rgba(210, 219, 221), rgba(210, 219, 221) 40%, #a4a7a8);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray, 0 0 3px black;
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+}
+
+button:hover {
+  background: linear-gradient(#edf0f1 10%, rgba(210, 219, 221), rgba(210, 219, 221) 40%, #edf0f1);
+}
