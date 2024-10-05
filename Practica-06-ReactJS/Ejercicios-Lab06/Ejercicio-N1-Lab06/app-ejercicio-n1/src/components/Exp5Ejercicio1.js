@@ -19,7 +19,7 @@ function Exp5Ejercicio1() {
   }
 
   return (
-    <div>
+    <div className="card">
       <h3>Lista de Usuarios:</h3>
       <ul>
         {users.map((user) => (

@@ -1,31 +1,34 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+
+function Home() {
+  return <h2>Bienvenido a la Página de Inicio</h2>;
+}
+
+function About() {
+  return <h2>Esta es la página de Acerca de</h2>;
+}
+
+function Contact() {
+  return <h2>Página de Contacto</h2>;
+}
 
 function Exp6Ejercicio1() {
-  const [route, setRoute] = useState('home'); // Controla la "ruta" activa
-
-  const renderPage = () => {
-    switch (route) {
-      case 'home':
-        return <h2>Bienvenido a la Página de Inicio</h2>;
-      case 'about':
-        return <h2>Esta es la página de Acerca de</h2>;
-      case 'contact':
-        return <h2>Página de Contacto</h2>;
-      default:
-        return <h2>Página no encontrada</h2>;
-    }
-  };
-
   return (
-    <div>
+    <div className="card">
       <nav>
-        <button onClick={() => setRoute('home')}>Inicio</button>
-        <button onClick={() => setRoute('about')}>Acerca de</button>
-        <button onClick={() => setRoute('contact')}>Contacto</button>
+        <ul>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/about">Acerca de</Link></li>
+          <li><Link to="/contact">Contacto</Link></li>
+        </ul>
       </nav>
 
-      {/* Renderiza la página según la ruta seleccionada */}
-      <div>{renderPage()}</div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }

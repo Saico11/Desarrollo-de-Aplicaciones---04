@@ -16,7 +16,7 @@ class Exp4Ejercicio1 extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <h3>Contador con Clase: {this.state.count}</h3>
         <button onClick={this.incrementCount}>Incrementar</button>
       </div>

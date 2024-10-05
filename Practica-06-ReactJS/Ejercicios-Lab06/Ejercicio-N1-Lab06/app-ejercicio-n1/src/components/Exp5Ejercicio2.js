@@ -13,7 +13,7 @@ function Exp5Ejercicio2() {
   }, []); // El array vacío asegura que el efecto solo se ejecuta al montar
 
   return (
-    <div>
+    <div className="card">
       <h3>Temporizador: {seconds} segundos</h3>
     </div>
   );

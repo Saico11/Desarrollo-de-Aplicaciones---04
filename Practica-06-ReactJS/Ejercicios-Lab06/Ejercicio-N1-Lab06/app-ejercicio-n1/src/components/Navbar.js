@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';  // Importamos Link de react-router-dom
 
-function Navbar({ setPage }) {
+function Navbar() {
   return (
     <nav>
       <ul>
-        <li><button onClick={() => setPage('home')}>Inicio</button></li>
-        <li><button onClick={() => setPage('experiencia03')}>Experiencia 03</button></li>
-        <li><button onClick={() => setPage('experiencia04')}>Experiencia 04</button></li>
-        <li><button onClick={() => setPage('experiencia05')}>Experiencia 05</button></li>
-        <li><button onClick={() => setPage('experiencia06')}>Experiencia 06</button></li>
+        <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/experiencia03">Experiencia 03</Link></li>
+        <li><Link to="/experiencia04">Experiencia 04</Link></li>
+        <li><Link to="/experiencia05">Experiencia 05</Link></li>
+        <li><Link to="/experiencia06">Experiencia 06</Link></li>
       </ul>
     </nav>
   );
