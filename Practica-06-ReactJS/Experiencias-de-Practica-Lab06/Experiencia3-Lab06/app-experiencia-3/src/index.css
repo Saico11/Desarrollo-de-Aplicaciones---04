@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+button {
+  box-shadow: -2px -2px 3px inset rgba(79, 115, 150, 0.25), 1px 2px 3px inset rgba(79, 115, 150, 0.5), 0 0 3px black;
+  background: linear-gradient(#a4a7a8 10%, rgba(210, 219, 221), rgba(210, 219, 221) 40%, #a4a7a8);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: bold;
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray, 0 0 3px black;
+  width: 150px;
+  height: 50px;
+  margin: 5px;
+  padding: 2px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+}
+
+button:hover {
+  background: linear-gradient(#edf0f1 10%, rgba(210, 219, 221), rgba(210, 219, 221) 40%, #edf0f1);
+}

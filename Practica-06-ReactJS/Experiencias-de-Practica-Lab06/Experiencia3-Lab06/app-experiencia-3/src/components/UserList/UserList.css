@@ -1,0 +1,18 @@
+.user-list {
+    padding: 0;
+    margin: 20px;
+    list-style: none;
+}
+  
+.user-item {
+    background: linear-gradient(#edf0f1 10%, rgba(210, 219, 221), rgba(210, 219, 221) 40%, #edf0f1);
+    box-shadow: -2px -2px 3px inset rgba(79, 115, 150, 0.25), 1px 2px 3px inset rgba(79, 115, 150, 0.5);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #bbbb;
+}
+
+.user-item:hover {
+background-color: #e2e2e2;
+}

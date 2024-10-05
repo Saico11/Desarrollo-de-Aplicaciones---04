@@ -1,0 +1,7 @@
+.footer {
+    color: whitesmoke;
+    text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray, 0 0 3px black;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
