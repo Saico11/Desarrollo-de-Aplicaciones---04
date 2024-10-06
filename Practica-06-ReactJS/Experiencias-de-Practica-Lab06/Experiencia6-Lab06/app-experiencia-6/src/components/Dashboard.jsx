@@ -1,12 +1,10 @@
-// /src/components/Dashboard/Dashboard.jsx
 const Dashboard = () => {
     return (
       <div>
         <h2>Dashboard</h2>
-        <p>Welcome to the private dashboard!</p>
+        <p>Dashboard privado. Nadie puede entrar jajaja</p>
       </div>
     );
-  };
-  
-  export default Dashboard;
-  
+};
+
+export default Dashboard;

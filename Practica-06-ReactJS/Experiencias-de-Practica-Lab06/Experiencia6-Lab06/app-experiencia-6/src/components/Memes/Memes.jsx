@@ -1,4 +1,3 @@
-// /src/components/Contact/Contact.jsx
 const Memes = () => {
     return (
       <div className="card">
@@ -7,7 +6,6 @@ const Memes = () => {
         <img src="https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-06-ReactJS/Experiencias-de-Practica-Lab06/Experiencia6-Lab06/app-experiencia-6/src/this-is-sparta.gif?raw=true" alt="this-is-sparta" style={{ display: 'block', margin: '0 auto' }}></img>
       </div>
     );
-  };
+};
   
-  export default Memes;
-  
+export default Memes;
