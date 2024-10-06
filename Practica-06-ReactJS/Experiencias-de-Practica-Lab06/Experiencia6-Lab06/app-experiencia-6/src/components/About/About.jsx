@@ -8,7 +8,7 @@ const About = () => {
     <div className="card">
       <h2>Sobre mi</h2>
       <p>Hola, soy estudiante de Ing. de Chistemas de la UCSM y estoy haciendo el trabajo para Desarrollo de Aplicaciones</p>
-      <img src="https://miro.medium.com/v2/resize:fit:960/1*h7GMfvHKvLPkynG9NvULJw.gif" alt="react-icon" style={{ display: 'block', margin: '0 auto', width: '20%' }}></img>
+      <img src="https://github.com/Saico11/Desarrollo-de-Aplicaciones---04/blob/main/Practica-06-ReactJS/Experiencias-de-Practica-Lab06/Experiencia6-Lab06/app-experiencia-6/src/react-icon.gif?raw=true" alt="react-icon" style={{ display: 'block', margin: '0 auto', width: '20%' }}></img>
       <nav>
         <ul>
           <li>
