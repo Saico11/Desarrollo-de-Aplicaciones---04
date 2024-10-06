@@ -1,5 +1,5 @@
 // /src/components/Contact/Contact.jsx
-const Contact = () => {
+const Memes = () => {
     return (
       <div className="card">
         <h2>Memes</h2>
@@ -9,5 +9,5 @@ const Contact = () => {
     );
   };
   
-  export default Contact;
+  export default Memes;
   

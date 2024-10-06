@@ -4,7 +4,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import Contact from './components/Memes/Memes';
+import Memes from './components/Memes/Memes';
 import PrivateRoute from './components/PrivateRoute';
 import Dashboard from './components/Dashboard';
 
@@ -21,7 +21,7 @@ const App = () => {
             <Link to="/about">Sobre mi</Link>
           </li>
           <li>
-            <Link to="/contact">Memes</Link>
+            <Link to="/memes">Memes</Link>
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link> {/* Enlace al dashboard privado */}
@@ -32,7 +32,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/memes" element={<Memes />} />
         <Route path="/dashboard" element={<PrivateRoute element={<Dashboard />} />} />
       </Routes>
 
