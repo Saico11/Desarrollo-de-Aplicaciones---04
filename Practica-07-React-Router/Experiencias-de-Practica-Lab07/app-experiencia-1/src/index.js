@@ -12,7 +12,11 @@ import NewProducts from './pages/NewProducts';
 import Users from './pages/Users';
 import UserDetails from './pages/UserDetails';
 import { Admin } from './pages/Admin';
-import './index.css';  // Importa el archivo de estilos
+import Categories from './pages/Categories';
+import Tecnology from './pages/Tecnology';
+import Cleaning from './pages/Cleaning';
+import ProductDetails from './pages/ProductDetails';
+import './index.css';
 
 
 function App() {
@@ -24,12 +28,17 @@ function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="contact" element={<Contact />} />
           <Route path="products" element={<Products />}>
+            <Route path=":productId" element={<ProductDetails />} />
             <Route path="featured" element={<FeaturedProducts />} />
             <Route path="new" element={<NewProducts />} />
           </Route>
           <Route path="users" element={<Users />}>
             <Route path=":userId" element={<UserDetails />} />
             <Route path="admin" element={<Admin/>}/>
+          </Route>
+          <Route path="categories" element={<Categories />}>
+            <Route path="tecnology" element={<Tecnology />} />
+            <Route path="cleaning" element={<Cleaning />} />
           </Route>
           <Route path="*" element={<NoPage />} />
         </Route>
