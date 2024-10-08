@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url("https://i.redd.it/more-frutiger-aero-wallpapers-v0-uecbxzxdaeed1.jpg?width=3840&format=pjpg&auto=webp&s=a975a175ec180b733195958790efee5b1822a400") no-repeat fixed;
+  /*background: linear-gradient(#fff, #ccc) no-repeat fixed;*/
+  background-size: cover;
+  cursor: url(https://files.catbox.moe/81rgee.cur), auto;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.55);
+  z-index: -1;
+}
+
+h1{
+  color: #ffffff;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 3px #ff8420;
+}
+
+h2{
+  color: #2f4153;
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 45px;
+  margin-bottom: 10px;
+  text-shadow: 0 0 2px #2f4153;
+}
+
+p{
+  color: #ffffff;;
+}
+
+nav {
+  background: linear-gradient(#ffac80 10%, rgb(246, 113, 40), rgb(246, 113, 40) 40%, #f67128);
+  box-shadow: -2px -2px 3px inset rgba(153, 153, 153, 0.25), 1px 2px 3px inset rgba(155, 155, 155, 0.5);
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.card nav{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li, .card nav a {
+  margin: 0 15px;
+}
+
+nav ul li a, nav a{
+  color: whitesmoke;
+  text-shadow: -1px -1px 0 gray, 1px -1px 0 gray, -1px 1px 0 gray, 1px 1px 0 gray, 0 0 3px black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* las cartitas */
+.card {
+  /*background-color: rgba(228, 228, 228, 0.92);*/
+  background-color: rgba(53, 53, 53, 0.92);
+  box-shadow: 0 0 10px 0 rgb(22, 22, 22) inset, 0 0 3px black;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+  padding: 0;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card p {
+  margin: 15px;
+}
+
+.card h2{
+  color: #333;
+}
+
+.card img{
+  padding: 5px;
+}
+
+input[type="search"] {
+  width: 35%;
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: block;
+}
