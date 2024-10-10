@@ -1,13 +1,19 @@
-import { useContext } from 'react';
-import UserContext from './UserContext';
+import { useState, createContext } from 'react';
+import Component2 from './Component2';
+
+// Crear el contexto del usuario
+export const UserContext = createContext(null);
 
 const Component1 = () => {
-  const { user } = useContext(UserContext);
+  const [user] = useState("Jesse Hall");
 
   return (
-    <div className="card">
-      <h1>Hello, {user}!</h1>
-    </div>
+    <UserContext.Provider value={user}>
+      <div class="card">
+        <h1>{`Hello ${user}!`}</h1>
+      </div>
+      <Component2 />
+    </UserContext.Provider>
   );
 };
 

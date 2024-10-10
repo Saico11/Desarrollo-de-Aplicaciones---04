@@ -1,19 +1,11 @@
-import { useContext } from 'react';
-import UserContext from './UserContext';
+import Component3 from './Component3';
 
 const Component2 = () => {
-  const { setUser } = useContext(UserContext);
-
-  const changeUser = () => {
-    setUser("Jane Doe");
-  };
-
   return (
-    <div>
-      <div class="button-container">
-        <button onClick={changeUser}>Change User</button>
-      </div>
-    </div>
+    <>
+      <h2>Component 2</h2>
+      <Component3 />
+    </>
   );
 };
 
