@@ -11,14 +11,14 @@ import Component1 from './pages/Component1';
 import Component2 from './pages/Component2';
 import User from './pages/User';
 import ChangeUser from './pages/ChangeUser';
-import ThemeProvider from './pages/ThemeProvider';  // Importamos el proveedor del tema
+import ThemeProvider from './pages/ThemeProvider';
 import ShowTheme from './pages/ShowTheme';
 import ToggleTheme from './pages/ToggleTheme';
 import './index.css';
 
 function App() {
   return (
-    <UserProvider>  {/* Envolvemos la aplicación con UserProvider */}
+    <UserProvider>
       <ThemeProvider>
         <BrowserRouter>
           <Routes>
@@ -28,7 +28,6 @@ function App() {
               <Route path="contact" element={<Contact />} />
               <Route path="component1" element={<Component1 />} />
               <Route path="component2" element={<Component2 />} />
-              {/* Nuevas rutas para el tema */}
               <Route path="user" element={<User />} />
               <Route path="change-user" element={<ChangeUser />} />
               <Route path="/show-theme" element={<ShowTheme />} />

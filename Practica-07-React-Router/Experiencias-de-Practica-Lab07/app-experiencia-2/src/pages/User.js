@@ -6,7 +6,7 @@ const User = () => {
 
   return (
     <div className="card">
-      <h1>Hello, {user}!</h1>
+      <h1>Bienvenido, {user}!</h1>
     </div>
   );
 };

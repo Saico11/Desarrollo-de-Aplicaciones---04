@@ -5,7 +5,7 @@ const ChangeUser = () => {
   const { setUser } = useContext(UserContext);
 
   const changeUser = () => {
-    setUser("Jane Doe");
+    setUser("John McMani");
   };
 
   return (

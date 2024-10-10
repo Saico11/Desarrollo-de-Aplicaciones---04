@@ -3,7 +3,7 @@ import UserContext from './UserContext';
 
 const UserProvider = ({ children }) => {
   // Estado del usuario compartido por todos los componentes
-  const [user, setUser] = useState("John Doe");
+  const [user, setUser] = useState("John Dingo");
 
   return (
     // Proveemos el estado "user" y la función "setUser" a todos los componentes hijos
