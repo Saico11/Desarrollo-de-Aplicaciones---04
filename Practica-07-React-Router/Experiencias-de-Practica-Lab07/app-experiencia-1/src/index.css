@@ -33,12 +33,12 @@ h3{
 }
 
 h2{
-  color: #2f4153;
+  color: #ffffff;
   text-align: center;
   margin-top: 0px;
   padding-top: 45px;
   margin-bottom: 10px;
-  text-shadow: 0 0 2px #2f4153;
+  text-shadow: 0 0 3px #ff8420;
 }
 
 p{
@@ -96,10 +96,6 @@ nav ul li a:hover {
 
 .card p {
   margin: 15px;
-}
-
-.card h2{
-  color: #333;
 }
 
 .card img{
