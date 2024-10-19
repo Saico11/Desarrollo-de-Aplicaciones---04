@@ -33,35 +33,70 @@ def tarjeta_tarea(tarea: Dict[str, str]):
 
 def columna_kanban(nombre: str, estado_filtro: str):
     return (
-        rx.vstack(
-            rx.heading(nombre),
-            rx.table.root(
-                rx.table.body(
-                    rx.foreach(
-                        State.tareas, 
-                        lambda tarea: rx.cond(
-                            tarea["estado"] == estado_filtro,
-                            tarjeta_tarea(tarea),
-                            None  
+        rx.box(
+            rx.vstack(
+                rx.heading(nombre),
+                rx.table.root(
+                    rx.table.body(
+                        rx.foreach(
+                            State.tareas, 
+                            lambda tarea: rx.cond(
+                                tarea["estado"] == estado_filtro,
+                                tarjeta_tarea(tarea),
+                                None  
+                            )
                         )
-                    )
+                    ),
                 ),
+                padding="20px",
+                border="1px solid #303030",
+                border_radius="8px",
+                box_shadow="0 4px 8px rgba(34, 34, 34, 0.7)",
+
+                background="linear-gradient(#2a2a2a, #000)",
             ),
+            display="flex",
+            justify_content="center",
+            align_items="center",
+            width="100%",
+            margin="0 auto"
         )
     )
+
 
 def mostrar_contador():
     return rx.cond(
         State.mostrar_solo_pendientes,
-        rx.text(f"Tareas Pendientes: {State.contadores['Pendiente']}", font_size="20px", margin="10px"),
-        rx.text(f"Tareas Completadas: {State.contadores['Completado']}", font_size="20px", margin="10px")
+        rx.box(
+            rx.text(
+                f"Tareas Pendientes: {State.contadores['Pendiente']}",
+                font_size="20px",
+                margin="10px"
+            ),
+            display="flex",
+            justify_content="center",
+            align_items="center",
+            width="100%"
+        ),
+        rx.box(
+            rx.text(
+                f"Tareas Completadas: {State.contadores['Completado']}",
+                font_size="20px",
+                margin="10px"
+            ),
+            display="flex",
+            justify_content="center",
+            align_items="center",
+            width="100%"
+        )
     )
 
 def index():
     return rx.cond(
         State.mostrar_solo_pendientes,
         rx.vstack(
-            mostrar_contador(), 
+            rx.heading("Ejercicio 2: Contador de Tareas por Estado en Tablero Kanban", font_size="24px", margin="10px"),
+            mostrar_contador(),
             rx.button(
 		"Ver Tareas Completadas", 
 		on_click=State.mostrar_pendientes,
@@ -75,6 +110,7 @@ def index():
             margin="20px"
         ),
         rx.vstack(
+            rx.heading("Ejercicio 2: Contador de Tareas por Estado en Tablero Kanban", font_size="24px", margin="10px"),
             mostrar_contador(),  
             rx.button(
 		"Ver Tareas Pendientes",
