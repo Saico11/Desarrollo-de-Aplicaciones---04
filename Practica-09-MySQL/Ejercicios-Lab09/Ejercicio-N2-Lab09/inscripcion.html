@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Inscripción de Usuarios</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .formulario {
+            width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .formulario input[type="text"], 
+        .formulario input[type="email"],
+        .formulario input[type="password"],
+        .formulario input[type="date"],
+        .formulario select {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .formulario input[type="submit"] {
+            padding: 10px;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .formulario input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="formulario">
+        <h2>Formulario de inscripción de usuarios</h2>
+        <form action="procesar_registro.php" method="post">
+            <label for="nombre_completo">Nombre completo:</label>
+            <input type="text" name="nombre_completo" required>
+            
+            <label for="direccion">Dirección:</label>
+            <input type="text" name="direccion" required>
+            
+            <label for="correo_electronico">Correo electrónico:</label>
+            <input type="email" name="correo_electronico" required>
+            
+            <label for="contrasena">Contraseña:</label>
+            <input type="password" name="contrasena" required>
+            
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" name="fecha_nacimiento" required>
+            
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" required>
+                <option value="Hombre">Hombre</option>
+                <option value="Mujer">Mujer</option>
+            </select>
+            
+            <label for="temas_interes">Por favor, elige los temas de interés:</label><br>
+            <input type="checkbox" name="temas_interes[]" value="Ficción"> Ficción
+            <input type="checkbox" name="temas_interes[]" value="Terror"> Terror
+            <input type="checkbox" name="temas_interes[]" value="Acción"> Acción
+            <input type="checkbox" name="temas_interes[]" value="Comedia"> Comedia<br>
+            
+            <label for="aficiones">Selecciona tus aficiones:</label>
+            <select name="aficiones[]" multiple>
+                <option value="Deporte-aire-libre">Deporte al aire libre</option>
+                <option value="Música-Pop">Música Pop</option>
+                <option value="Fotografía">Fotografía</option>
+            </select>
+            
+            <input type="submit" value="Registrar">
+        </form>
+    </div>
+</body>
+</html>
