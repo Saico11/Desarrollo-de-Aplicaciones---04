@@ -1,0 +1,56 @@
+Guía CSS Avanzado
+=================
+
+1. Flexbox
+   - Flexbox es un modelo de diseño unidimensional que facilita la distribución de elementos en una fila o columna.
+   - Propiedades importantes:
+     - `display: flex;`: Activa Flexbox en un contenedor.
+     - `justify-content`: Alinea los elementos en la dirección principal (horizontal por defecto).
+     - `align-items`: Alinea los elementos en la dirección perpendicular (vertical por defecto).
+
+2. Grid Layout
+   - CSS Grid es un modelo de diseño bidimensional que permite organizar elementos en filas y columnas.
+   - Propiedades importantes:
+     - `display: grid;`: Activa Grid en un contenedor.
+     - `grid-template-columns`: Define el número y tamaño de columnas.
+     - `grid-template-rows`: Define el número y tamaño de filas.
+
+3. Animaciones CSS
+   - CSS permite crear animaciones con la propiedad `@keyframes` y `animation`.
+   - Ejemplo:
+     ```css
+     @keyframes fadeIn {
+         from { opacity: 0; }
+         to { opacity: 1; }
+     }
+
+     .fade-in {
+         animation: fadeIn 2s ease-in;
+     }
+     ```
+
+4. Variables CSS
+   - Las variables CSS permiten almacenar valores reutilizables.
+   - Ejemplo:
+     ```css
+     :root {
+         --main-color: #3498db;
+     }
+
+     .box {
+         background-color: var(--main-color);
+     }
+     ```
+
+5. Media Queries
+   - Las media queries permiten adaptar el diseño a diferentes tamaños de pantalla.
+   - Ejemplo:
+     ```css
+     @media (max-width: 768px) {
+         .container {
+             flex-direction: column;
+         }
+     }
+     ```
+
+Fin de la guía.
