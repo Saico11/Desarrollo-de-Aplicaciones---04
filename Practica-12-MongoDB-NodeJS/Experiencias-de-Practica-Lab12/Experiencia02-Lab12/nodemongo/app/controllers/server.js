@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var Router = require('./app/controllers/routes');
+var Router = require('./routes');
 
 var port = 3000;
 
